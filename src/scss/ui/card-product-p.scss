@@ -1,0 +1,41 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.card-product-p {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 8px;
+  .item-title {
+  }
+  .item-text {
+    margin-top: 5px;
+  }
+  .item-prices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px;
+  }
+  .item-price {
+    width: fit-content;
+    &._fill {
+      padding: 10px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 8px;
+    }
+  }
+  .item-img {
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    aspect-ratio: 1/0.65;
+  }
+  .item-btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

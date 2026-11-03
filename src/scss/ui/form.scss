@@ -1,0 +1,122 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.input-control {
+  width: 100%;
+}
+.input {
+  --border: rgba(20, 20, 20, 0.5);
+  --background: white;
+  --color: var(--black);
+  --border-h: var(--black);
+  --background-h: white;
+  --color-h: var(--black);
+  --border-f: var(--black);
+  --background-f: white;
+  --color-f: var(--black);
+
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  padding: 17px 25px;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--color);
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+
+  &::placeholder {
+    color: inherit;
+    opacity: 0.6;
+  }
+
+  @include tablet {
+    padding: 14px 20px;
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
+
+  @include hover {
+    border-color: var(--border-h);
+    color: var(--color-h);
+    background-color: var(--background-h);
+  }
+  &:focus {
+    border-color: var(--border-f) !important;
+    color: var(--color-f) !important;
+    background-color: var(--background-f) !important;
+  }
+}
+
+.check-wrap {
+  position: relative;
+  z-index: 1;
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+
+    &:checked + .wpcf7-list-item-label {
+      &::before {
+        background: var(--url) center / 14px auto no-repeat;
+        border-color: var(--border-a);
+        background-color: var(--background-a);
+      }
+    }
+  }
+
+  .wpcf7-list-item {
+    margin: 0;
+  }
+  .wpcf7-list-item-label {
+    --color: rgba(20, 20, 20, 0.6);
+    --color-h: var(--primary);
+
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+
+    font-size: 14px;
+    color: var(--color);
+
+    a {
+      text-decoration: underline;
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--color-h);
+      }
+    }
+
+    &::before {
+      --border: rgba(20, 20, 20, 0.15);
+      --background: white;
+      --border-a: var(--black);
+      --background-a: white;
+      --url: url("@img/check-dark.svg");
+
+      content: "";
+      flex-shrink: 0;
+      display: block;
+      width: 22px;
+      height: 22px;
+      border-radius: 4px;
+      background-color: var(--background);
+      border: 1px solid var(--border);
+
+      transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+    }
+  }
+}

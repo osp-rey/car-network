@@ -1,0 +1,33 @@
+{
+  "name": "gulp_osprey",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "osprey",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "css-loader": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-changed": "latest",
+    "gulp-clean": "latest",
+    "gulp-file-include": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "latest",
+    "sass": "latest",
+    "style-loader": "latest",
+    "terser-webpack-plugin": "latest",
+    "webpack-stream": "latest"
+  }
+}

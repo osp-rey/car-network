@@ -1,0 +1,107 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.slider-arrows {
+  display: flex;
+  gap: 5px;
+
+  @include laptop-min {
+    display: none;
+  }
+}
+.slider-arrow {
+  --border: var(--primary);
+  --background: var(--primary);
+  --color: white;
+  --border-h: var(--primary-h);
+  --background-h: var(--primary-h);
+  --color-h: white;
+  --border-d: rgba(20, 20, 20, 0);
+  --background-d: rgba(20, 20, 20, 0.2);
+  --color-d: white;
+
+  @include flex-center;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  color: var(--color);
+  border-radius: 8px;
+
+  width: 54px;
+  height: 54px;
+
+  font-size: 21px;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+
+  @include hover {
+    color: var(--color-h);
+    border-color: var(--border-h);
+    background-color: var(--background-h);
+  }
+
+  &.swiper-button-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    color: var(--color-d);
+    border-color: var(--border-d);
+    background-color: var(--background-d);
+  }
+  &.swiper-button-lock {
+    display: none;
+  }
+
+  &._outline-white {
+    --border: white;
+    --background: transparent;
+    --color: white;
+    --border-h: white;
+    --background-h: white;
+    --color-h: var(--black);
+    --border-d: white;
+    --background-d: rgba(20, 20, 20, 0.2);
+    --color-d: white;
+  }
+}
+
+.slider-pagination {
+  @include flex-center;
+  margin-top: 30px;
+  gap: 10px;
+
+  &._white {
+    .swiper-pagination-bullet {
+      --background: white;
+    }
+  }
+
+  &.swiper-pagination-lock {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    --background: var(--primary);
+    margin: 0 !important;
+    opacity: 0.2;
+    border-radius: 2px;
+    width: 40px;
+    height: 4px;
+    cursor: pointer;
+
+    background-color: var(--background);
+
+    transition: opacity .3s ease;
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+
+    @include hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.sect-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.sect-m {
+  margin: 80px 0px;
+  @include laptop-min {
+    margin: 60px 0px;
+  }
+}
+.sect-p {
+  padding: 80px 0px;
+  @include laptop-min {
+    padding: 60px 0px;
+  }
+
+  & + .sect-p.bg-porcelain {
+    padding-top: 0 !important;
+  }
+  &.bg-porcelain {
+    background-color: var(--porcelain);
+  }
+}
+
+.sect-head {
+  margin-bottom: 40px;
+  @include laptop-min {
+    margin-bottom: 30px;
+  }
+
+  &__wrap {
+    @include flex-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 20px;
+  }
+  &__btn {
+    @include laptop-min {
+      display: none !important;
+    }
+  }
+}
+
+.sect-mob-btn {
+  width: 100%;
+  margin-top: 25px;
+
+  @media (min-width: 576px) {
+    display: none !important;
+  }
+}

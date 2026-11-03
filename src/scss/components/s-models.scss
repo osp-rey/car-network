@@ -1,0 +1,15 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-models {
+  &__slider {
+    .swiper-slide {
+      box-sizing: border-box;
+      height: auto !important;
+
+      .card-product-p {
+        height: 100%;
+      }
+    }
+  }
+}

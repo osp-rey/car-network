@@ -1,0 +1,46 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-cats {
+  @include laptop-middle {
+    overflow: hidden;
+  }
+
+  &__slider {
+    .swiper-slide {
+      box-sizing: border-box;
+      @include laptop-middle {
+        width: 380px !important;
+        max-width: 100%;
+      }
+      @include tablet {
+        width: 310px !important;
+      }
+    }
+
+    @include laptop-middle {
+      overflow: visible !important;
+    }
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 15px;
+    margin: 40px auto 0px auto;
+
+    transition: color 0.3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    @include laptop-min {
+      margin-top: 30px;
+    }
+
+    i {
+      flex-shrink: 0;
+      font-size: 14px;
+    }
+  }
+}

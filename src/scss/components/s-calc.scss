@@ -1,0 +1,76 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-calc {
+  overflow: hidden;
+  @include laptop-middle {
+    margin-top: 60px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    @include laptop-middle {
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    flex: 0 1 725px;
+    padding: 80px 0px;
+    @include laptop-middle {
+      flex: auto;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &__form {
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      @include tablet {
+        gap: 16px;
+      }
+    }
+    .form-control {
+      @include tablet-min {
+        grid-column: 2 span;
+      }
+      &._full {
+        grid-column: 2 span;
+      }
+    }
+    .btn-s {
+      width: 100%;
+      margin-top: 24px;
+      @include tablet {
+        margin-top: 16px;
+      }
+    }
+  }
+  &__gallery {
+    position: relative;
+    flex: 0 1 815px;
+    @include laptop {
+      flex-basis: 550px;
+    }
+    @include laptop-middle {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    max-width: none;
+    @include laptop-middle {
+      width: 100%;
+      height: auto;
+      position: static;
+    }
+  }
+}

@@ -1,8 +1,10 @@
 import burger from "./functions/burger.js";
 import buttonsNote from "./functions/buttonsNote.js";
 import changeModalTitle from "./functions/changeModalTitle.js";
+import handlerSelect from "./functions/handlerSelect.js";
 import headerScroll from "./functions/headerScroll.js";
 import hero from "./functions/hero.js";
+import inputmask from "./functions/inputmask.js";
 import sliders from "./functions/sliders.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -12,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
   sliders();
   hero();
   headerScroll();
+  handlerSelect();
+  inputmask();
 
   Fancybox.bind("[data-fancybox]", {
     on: {

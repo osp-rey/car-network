@@ -3,6 +3,7 @@
 
 .sect-bg {
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
@@ -48,6 +49,9 @@
     flex-wrap: wrap;
     gap: 30px;
     row-gap: 20px;
+  }
+  &__content {
+    margin-top: 20px;
   }
   &__btn {
     @include laptop-min {

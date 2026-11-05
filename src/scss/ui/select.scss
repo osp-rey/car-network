@@ -1,0 +1,89 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.select {
+  position: relative;
+
+  &._open {
+    .select-arrow {
+      transform: rotate(180deg);
+    }
+    .select-body {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+.select-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.select-input {
+  cursor: pointer;
+  padding-right: 45px;
+}
+.select-arrow {
+  position: absolute;
+  font-size: 12px;
+  right: 20px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+.select-body {
+  --border: rgba(20, 20, 20, 0.5);
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  border-radius: 8px;
+  background-color: white;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  z-index: 10;
+  max-height: 225px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+
+  transition:
+    transform 0.4s ease,
+    visibility 0.4s ease,
+    opacity 0.4s ease;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 4px;
+  }
+}
+.select-item {
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+
+  padding: 12px 16px;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+
+  @include hover {
+    background-color: var(--porcelain);
+  }
+  &._active {
+    background-color: var(--porcelain);
+    pointer-events: none;
+  }
+}

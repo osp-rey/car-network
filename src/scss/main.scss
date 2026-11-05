@@ -17,6 +17,8 @@
 @use "./ui/form";
 @use "./ui/card-cat";
 @use "./ui/card-product-p";
+@use "./ui/card-promo";
+@use "./ui/select";
 
 @use "./components/header";
 @use "./components/burger";
@@ -25,5 +27,9 @@
 @use "./components/s-hero";
 @use "./components/s-cats";
 @use "./components/s-models";
+@use "./components/s-promo";
+@use "./components/s-test";
+@use "./components/s-steps";
+@use "./components/s-calc";
 
 @use "./components/footer";

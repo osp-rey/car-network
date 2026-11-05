@@ -1,0 +1,73 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-steps {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(20, 20, 20, 0.2);
+    border-left: 1px solid rgba(20, 20, 20, 0.2);
+
+    @include laptop-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 40px 30px;
+    border-right: 1px solid rgba(20, 20, 20, 0.2);
+    border-bottom: 1px solid rgba(20, 20, 20, 0.2);
+    z-index: 1;
+
+    @include laptop {
+      padding: 30px 25px;
+    }
+    @include tablet {
+      padding: 25px 20px;
+    }
+
+    .item-title {
+      margin-bottom: 20px;
+    }
+    .item-body {
+      padding-right: 130px;
+      @include laptop {
+        padding-right: 80px;
+      }
+    }
+    .item-content {
+      margin: 0;
+      @include laptop {
+        font-size: 16px;
+      }
+      @include tablet-min {
+        font-size: 15px;
+      }
+    }
+    .item-btn {
+      margin-top: 20px;
+    }
+    .item-num {
+      position: absolute;
+      font-size: 160px;
+      width: 150px;
+      text-align: center;
+      color: transparent;
+      -webkit-text-stroke: 2px rgba(20, 20, 20, 0.2);
+      line-height: 100%;
+      right: 0;
+      bottom: 0;
+      user-select: none;
+      z-index: -1;
+
+      @include laptop {
+        font-size: 120px;
+        width: 100px;
+      }
+      @include tablet {
+        font-size: 100px;
+        width: 100px;
+      }
+    }
+  }
+}

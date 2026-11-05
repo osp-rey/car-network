@@ -2,10 +2,25 @@
 @use '../base/media' as *;
 
 .s-models {
+  @include laptop-middle {
+    overflow: hidden;
+  }
   &__slider {
+    @include laptop-middle {
+      overflow: visible !important;
+    }
+
     .swiper-slide {
       box-sizing: border-box;
       height: auto !important;
+
+      @include laptop-middle {
+        width: 380px !important;
+        max-width: 100%;
+      }
+      @include tablet {
+        width: 320px !important;
+      }
 
       .card-product-p {
         height: 100%;

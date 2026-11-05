@@ -95,13 +95,39 @@
 
     background-color: var(--background);
 
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
     &.swiper-pagination-bullet-active {
       opacity: 1;
     }
 
     @include hover {
       opacity: 0.8;
+    }
+  }
+}
+
+.slider-scrollbar {
+  --background: rgba(20, 20, 20, 0.2);
+  --color: var(--primary);
+
+  margin-top: 40px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--background);
+  @include laptop-min {
+    margin-top: 30px;
+  }
+
+  .swiper-scrollbar-drag {
+    position: relative;
+    background-color: var(--color);
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: -1px 0px;
+      background-color: var(--color);
+      z-index: 1;
     }
   }
 }

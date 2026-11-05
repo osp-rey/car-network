@@ -43,4 +43,7 @@
   @include laptop-min {
     font-size: 26px;
   }
+  @include tablet {
+    font-size: 24px;
+  }
 }

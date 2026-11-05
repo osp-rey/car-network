@@ -1,0 +1,85 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-test {
+  position: relative;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 30.76%);
+    z-index: -1;
+
+    @include laptop {
+      width: 100vw;
+      background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0) 0%,
+        #fff 80.76%
+      );
+    }
+  }
+  @include laptop-min {
+    padding: 0 !important;
+    margin: 60px 0px;
+  }
+
+  &__wrap {
+    width: 610px;
+    max-width: 100%;
+    margin-left: auto;
+    @include laptop {
+      margin-left: 0;
+    }
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__content {
+  }
+  &__form {
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      @include tablet {
+        gap: 16px;
+      }
+      .form-control {
+        &._full {
+          grid-column: 2 span;
+        }
+        @include tablet-min {
+          grid-column: 2 span;
+        }
+      }
+    }
+    .btn-s {
+      margin-top: 24px;
+      width: 100%;
+      @include tablet {
+        margin-top: 16px;
+      }
+    }
+  }
+  &__bg {
+    @include laptop-min {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+    }
+    img {
+      @media (min-width: 1366px) {
+        height: 100%;
+        width: auto;
+        margin-right: auto;
+        object-position: center right;
+      }
+    }
+  }
+}

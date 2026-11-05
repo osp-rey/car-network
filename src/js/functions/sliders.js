@@ -80,4 +80,31 @@ export default function sliders() {
       },
     });
   }
+
+  const promoSlider = document.querySelector(".s-promo__slider");
+
+  if (promoSlider) {
+    const swiper = new Swiper(promoSlider, {
+      speed: 900,
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      autoplay: {
+        delay: 5500
+      },
+      navigation: {
+        prevEl: ".s-promo .slider-arrow._prev",
+        nextEl: ".s-promo .slider-arrow._next",
+      },
+      scrollbar: {
+        el: ".s-promo .slider-scrollbar",
+        draggable: true,
+      },
+      breakpoints: {
+        1366: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
 }

@@ -80,6 +80,12 @@
     }
   }
 
+  &._lap-min {
+    @media (min-width: 1026px) {
+      display: none;
+    }
+  }
+
   &.swiper-pagination-lock {
     display: none;
   }

@@ -1,0 +1,77 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-contacts {
+  &__wrap {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+    row-gap: 30px;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    flex: 0 1 600px;
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    font-size: 20px;
+    @include laptop-min {
+      font-size: 18px;
+      gap: 20px;
+    }
+    @include tablet {
+      gap: 15px;
+      font-size: 16px;
+    }
+
+    .item-rect {
+      @include flex-center;
+      color: white;
+      font-size: 30px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background-color: var(--primary);
+      width: 70px;
+      height: 70px;
+      @include laptop-min {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+      }
+      @include tablet {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+  }
+  &__map {
+    overflow: hidden;
+    flex: 0 1 900px;
+    min-height: 360px;
+    border-radius: 8px;
+    background-color: var(--porcelain);
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+    @include tablet {
+      min-height: 320px;
+    }
+  }
+}

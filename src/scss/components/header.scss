@@ -2,7 +2,11 @@
 @use "../base/media" as *;
 
 .header {
+  position: sticky;
+  top: 0;
+  background-color: white;
   padding: 35px 0px;
+  z-index: 100;
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
@@ -16,12 +20,10 @@
 
   &._fixed {
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;
     color: white;
     background-color: transparent;
-    z-index: 100;
 
     .logo-dark {
       display: none;
@@ -40,9 +42,9 @@
         display: none;
       }
     }
-    &._hide {
-      transform: translateY(-100%)
-    }
+  }
+  &._hide {
+    transform: translateY(-100%);
   }
 
   &__wrap {

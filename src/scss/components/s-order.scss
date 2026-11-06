@@ -1,0 +1,75 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-order {
+  position: relative;
+  z-index: 1;
+  color: white;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: linear-gradient(
+      270deg,
+      rgba(226, 36, 39, 0) 30.94%,
+      rgba(226, 36, 39, 0.61) 57.55%,
+      #e22427 91.85%
+    );
+    z-index: -1;
+
+    @include desktop {
+      background: linear-gradient(
+        270deg,
+        rgba(226, 36, 39, 0) 15.94%,
+        rgba(226, 36, 39, 0.61) 50.55%,
+        #e22427 91.85%
+      );
+    }
+    @include laptop-middle {
+      background: linear-gradient(
+        270deg,
+        rgba(226, 36, 39, 0) 0%,
+        rgba(226, 36, 39, 0.61) 33.55%,
+        #e22427 91.85%
+      );
+    }
+    @include laptop-min {
+      background: linear-gradient(
+        270deg,
+        rgba(226, 36, 39, 0) -21%,
+        rgba(226, 36, 39, 0.61) 20.55%,
+        rgba(226, 36, 39, 0.89) 91.85%
+      );
+    }
+  }
+  &__wrap {
+    max-width: 950px;
+  }
+  &__form {
+    width: 590px;
+    max-width: 100%;
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      @include laptop-min {
+        gap: 16px;
+      }
+    }
+    .form-control {
+      &._full {
+        grid-column: 2 span;
+      }
+      @include tablet-min {
+        grid-column: 2 span;
+      }
+    }
+    .btn-s {
+      width: 100%;
+      margin-top: 24px;
+      @include laptop-min {
+        margin-top: 16px;
+      }
+    }
+  }
+}

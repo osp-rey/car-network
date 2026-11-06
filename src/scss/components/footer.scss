@@ -1,0 +1,165 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.footer {
+  padding: 50px 0px;
+  background-color: var(--primary);
+  color: white;
+  @include tablet {
+    padding: 40px 0px;
+  }
+  &__wrap {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 30px;
+
+    @include laptop-middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include tablet-min {
+      gap: 20px;
+    }
+  }
+  &__logo {
+    display: block;
+    width: 220px;
+    @include tablet-min {
+      width: 160px;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__logo-all {
+    display: block;
+    width: 180px;
+    @include tablet-min {
+      width: 160px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    line-height: 100%;
+    width: 630px;
+
+    @include laptop {
+      width: 430px;
+      gap: 20px;
+      font-size: 16px;
+    }
+    @include laptop-middle {
+      width: 100%;
+    }
+    @include tablet-min {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    a {
+      transition: opacity 0.3s ease;
+
+      @include hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-shrink: 0;
+
+    text-align: right;
+    font-size: 16px;
+
+    @include laptop-middle {
+      text-align: center;
+      align-items: center;
+    }
+  }
+  &__tel {
+    font-size: 22px;
+    line-height: 100%;
+    transition: opacity 0.3s ease;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    @include hover {
+      opacity: 0.7;
+    }
+  }
+  &__address {
+    margin-top: 20px;
+  }
+  &__work-time {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+
+    @include laptop-min {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+    @include tablet {
+      font-size: 14px;
+      gap: 15px;
+    }
+
+    a {
+      transition: color 0.3s ease;
+      @include hover {
+        color: white;
+      }
+    }
+  }
+  &__bottom-content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 560px;
+    gap: 20px;
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+    @include tablet {
+      gap: 15px;
+    }
+  }
+  &__bottom-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 20px;
+    @include laptop-min {
+      text-align: center;
+      align-items: center;
+    }
+  }
+}

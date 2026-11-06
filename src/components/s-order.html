@@ -1,0 +1,78 @@
+<section class="sect-p s-order" id="s-order">
+  <picture class="sect-bg">
+    <img
+      src="@img/order-bg.jpg"
+      alt="image"
+      style="object-position: center right"
+    />
+  </picture>
+  <div class="container">
+    <div class="s-order__wrap">
+      <div class="sect-head">
+        <h2 class="s-title">
+          Понравилась определенная модель? Оставьте заявку прямо сейчас!
+        </h2>
+        <div class="content-box sect-head__content">
+          <p>и консультацию от дилера!</p>
+        </div>
+      </div>
+      <div data-cars-options="Значение 1, Значение 2, Значение 3">
+        <form action="#" class="s-order__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input _white-opacity" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Телефон" class="input _white-opacity" />
+            </div>
+            <div class="form-control _full">
+              <div class="select" data-target-options="cars">
+                <div class="select-btn">
+                  <input
+                    type="text"
+                    placeholder="Укажите модель"
+                    readonly
+                    class="input select-input _white-opacity"
+                  />
+                  <i class="icon-bottom select-arrow"></i>
+                </div>
+                <div class="select-body"></div>
+              </div>
+            </div>
+            <div class="form-control _full">
+              <div class="check-wrap _white">
+                <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="acceptance-297"
+                          value="1"
+                          aria-invalid="false"
+                        />
+                        <span class="wpcf7-list-item-label">
+                          <span>
+                            Я соглашаюсь с
+                            <a href="/personal-data">
+                              Правилами обработки персональных данных
+                            </a>
+                            и
+                            <a href="/privacy-policy">
+                              Политикой конфиденциальности
+                            </a>
+                          </span>
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <button type="submit" class="btn-s _white">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

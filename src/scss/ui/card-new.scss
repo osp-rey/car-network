@@ -1,0 +1,62 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.card-new {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  &__img {
+    display: block;
+    aspect-ratio: 1/0.67;
+    object-fit: cover;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px;
+    @include tablet {
+      padding: 25px 20px;
+    }
+  }
+  &__date {
+    color: rgba(20, 20, 20, 0.6);
+    margin-bottom: 10px;
+  }
+  &__title {
+    width: fit-content;
+    margin-bottom: 30px;
+    transition: color .3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: auto;
+    gap: 15px;
+
+    color: var(--primary);
+
+    @include hover {
+      span {
+        text-decoration: none;
+      }
+    }
+
+    span {
+      text-decoration: underline;
+    }
+    i {
+      flex-shrink: 0;
+      font-size: 14px;
+    }
+  }
+}

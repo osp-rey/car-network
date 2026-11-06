@@ -24,6 +24,8 @@
 .select-input {
   cursor: pointer;
   padding-right: 45px;
+  user-select: none;
+  pointer-events: none;
 }
 .select-arrow {
   position: absolute;
@@ -74,6 +76,7 @@
   font-size: 16px;
 
   padding: 12px 16px;
+  color: var(--black);
 
   transition:
     color 0.3s ease,

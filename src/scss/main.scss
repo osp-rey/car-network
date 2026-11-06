@@ -19,6 +19,8 @@
 @use "./ui/card-product-p";
 @use "./ui/card-promo";
 @use "./ui/select";
+@use "./ui/card-new";
+@use "./ui/breadcrumbs";
 
 @use "./components/header";
 @use "./components/burger";
@@ -31,5 +33,13 @@
 @use "./components/s-test";
 @use "./components/s-steps";
 @use "./components/s-calc";
+@use "./components/s-tradein";
+@use "./components/s-about";
+@use "./components/s-news";
+@use "./components/s-order";
+@use "./components/s-contacts";
+@use "./components/s-faq";
+@use "./components/s-intro";
+@use "./components/s-catalog";
 
 @use "./components/footer";

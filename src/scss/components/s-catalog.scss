@@ -1,0 +1,131 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-catalog {
+  &__wrap {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+  }
+  &__sidebar {
+    border-radius: 8px;
+    background-color: white;
+    width: 380px;
+    flex-shrink: 0;
+  }
+  &__sidebar-head {
+  }
+  &__sidebar-title {
+    padding: 18px 15px;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+  }
+  &__sidebar-filters {
+    .berocket_single_filter_widget {
+      padding: 15px 25px 15px 15px;
+    }
+    .bapf_head {
+      @include flex-between;
+      position: relative;
+      padding: 16px 0px;
+      cursor: pointer;
+      user-select: none;
+
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--primary);
+      }
+
+      h3 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        margin: 0;
+      }
+
+      &._active {
+        &::before {
+          transform: rotate(0deg);
+        }
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        width: 16px;
+        height: 2px;
+        background-color: currentColor;
+
+        transition: transform 0.3s ease;
+      }
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+    .bapf_slidr_all {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+
+      .bapf_slidr_main {
+        display: none !important;
+      }
+    }
+    .bapf_from::before {
+      content: "от";
+    }
+    .bapf_to::before {
+      content: "до";
+    }
+    .bapf_from,
+    .bapf_to {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 0 15px;
+      border: 1px solid var(--black);
+      border-radius: 8px;
+
+      font-size: 16px;
+      line-height: 100%;
+
+      &::before {
+        color: rgba(20, 20, 20, 0.6);
+      }
+
+      input {
+        width: 100%;
+        padding: 16px 0px;
+        border: none;
+        outline: none;
+
+        font-size: 16px;
+        line-height: 100%;
+
+        &::placeholder {
+          color: inherit;
+          opacity: 0.7;
+        }
+      }
+    }
+    .bapf_tbprice {
+      display: none;
+    }
+  }
+  &__body {
+    flex: 1;
+  }
+  &__head {
+    @include flex-between;
+    gap: 30px;
+  }
+  &__count {
+  }
+  &__sort-wrap {
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,77 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-faq {
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 0px;
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__col {
+    @media (min-width: 768px) {
+      &:nth-child(1),
+      &:nth-child(2) {
+        .s-faq__spoller:first-child {
+          border-top: 1px solid rgba(20, 20, 20, 0.2);
+        }
+      }
+    }
+    @include tablet {
+      &:first-child {
+        .s-faq__spoller:first-child {
+          border-top: 1px solid rgba(20, 20, 20, 0.2);
+        }
+      }
+    }
+  }
+  &__spoller {
+    border-bottom: 1px solid rgba(20, 20, 20, 0.2);
+  }
+  &__spoller-btn {
+    @include flex-between;
+    gap: 15px;
+    padding: 20px 0px;
+    cursor: pointer;
+
+    user-select: none;
+    font-size: 24px;
+
+    @include laptop {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+      padding: 15px 0px;
+    }
+    @include tablet-min {
+      font-size: 16px;
+    }
+
+    &._spoller-active {
+      i {
+        transform: rotate(180deg);
+      }
+    }
+
+    i {
+      font-size: 15px;
+      flex-shrink: 0;
+      color: var(--primary);
+      transition: transform 0.3s ease;
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+  }
+  &__content {
+    color: rgba(20, 20, 20, 0.6);
+    padding-bottom: 30px;
+    @include tablet {
+      padding-bottom: 20px;
+    }
+  }
+}

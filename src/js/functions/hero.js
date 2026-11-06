@@ -1,8 +1,7 @@
 export default function hero() {
-  const sect = document.querySelector(".s-hero");
+  const heroSlidesBodies = document.querySelectorAll(".s-hero__slide-body");
 
-  if (sect) {
-    const heroSlidesBodies = document.querySelectorAll(".s-hero__slide-body");
+  if (heroSlidesBodies.length) {
     function changeOffset() {
       const headerHeight = document.querySelector(".header").clientHeight;
       const sliderNav = document.querySelector(".s-hero__slider-nav");

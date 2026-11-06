@@ -1,0 +1,64 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-tradein {
+  &__body {
+    position: relative;
+    z-index: 1;
+  }
+  &__main {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 50%;
+    padding: 30px;
+    color: white;
+    z-index: 1;
+
+    @include laptop-min {
+      width: 100%;
+      min-height: 350px;
+    }
+    @include tablet {
+      padding: 30px 20px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(226, 36, 39, 0.7) 0%,
+        #e22427 100%
+      );
+      z-index: -1;
+      @include laptop-min {
+        background: linear-gradient(
+          180deg,
+          rgba(226, 36, 39, 0.7) 0%,
+          rgba(226, 36, 39, 0.8) 100%
+        );
+      }
+    }
+  }
+  &__main-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 0 auto;
+    @include laptop-min {
+      width: 100%;
+    }
+  }
+  &__title {
+  }
+  &__content {
+    margin-top: 20px;
+    max-width: 550px;
+  }
+  &__btn {
+    margin-top: 20px;
+  }
+}

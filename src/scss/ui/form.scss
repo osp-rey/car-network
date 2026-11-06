@@ -53,11 +53,35 @@
     color: var(--color-f) !important;
     background-color: var(--background-f) !important;
   }
+
+  &._white-opacity {
+    --border: white;
+    --background: rgba(255, 255, 255, 0.3);
+    --color: white;
+    --border-h: white;
+    --background-h: rgba(255, 255, 255, 0.3);
+    --color-h: white;
+    --border-f: white;
+    --background-f: rgba(255, 255, 255, 0.3);
+    --color-f: white;
+
+    &::placeholder {
+      opacity: 0.8;
+    }
+  }
 }
 
 .check-wrap {
   position: relative;
   z-index: 1;
+
+  &._white {
+    .wpcf7-list-item-label {
+      --color: rgba(255, 255, 255, 0.75);
+      --color-a: white;
+      --color-h: white;
+    }
+  }
 
   input[type="checkbox"] {
     position: absolute;
@@ -80,6 +104,7 @@
   }
   .wpcf7-list-item-label {
     --color: rgba(20, 20, 20, 0.6);
+    --color-a: rgba(20, 20, 20, 0.6);
     --color-h: var(--primary);
 
     cursor: pointer;
@@ -91,10 +116,12 @@
     color: var(--color);
 
     a {
+      color: var(--color-a);
       text-decoration: underline;
       transition: color 0.3s ease;
       @include hover {
         color: var(--color-h);
+        text-decoration: none;
       }
     }
 

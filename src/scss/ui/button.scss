@@ -48,4 +48,12 @@
     --background-h: white;
     --color-h: var(--black);
   }
+  &._white {
+    --border: white;
+    --background: white;
+    --color: var(--black);
+    --border-h: var(--porcelain);
+    --background-h: var(--porcelain);
+    --color-h: var(--black);
+  }
 }

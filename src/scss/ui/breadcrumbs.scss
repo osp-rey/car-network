@@ -1,6 +1,16 @@
 @use '../base/templates' as *;
 @use '../base/media' as *;
 
+.breadcrumbs-sect {
+  margin: 30px 0px;
+  @include laptop-min {
+    margin-bottom: 20px 0px;
+  }
+
+  & + .sect-m {
+    margin-top: 0 !important;
+  }
+}
 .breadcrumbs {
   display: flex;
   align-items: center;

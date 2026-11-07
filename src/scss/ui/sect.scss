@@ -34,12 +34,9 @@
   & + .sect-p.bg-dove {
     padding-top: 0 !important;
   }
-  &.bg-porcelain {
-    background-color: var(--porcelain);
-  }
-  &.bg-dove {
-    background-color: var(--dove);
-  }
+}
+.bg-porcelain {
+  background-color: var(--porcelain);
 }
 
 .sect-head {

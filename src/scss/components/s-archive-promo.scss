@@ -1,0 +1,14 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-archive-promo {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include laptop-min {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+}

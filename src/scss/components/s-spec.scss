@@ -1,0 +1,55 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-spec {
+  padding: 30px 0px 20px 0px;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @include laptop-min {
+      gap: 15px;
+    }
+    @include tablet {
+      gap: 10px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex: 1 1 calc(20% - 20px);
+    background-color: white;
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+
+    @include laptop-min {
+      flex-basis: calc(33% - 20px);
+    }
+    @include tablet {
+      padding: 15px;
+      flex-basis: calc(50% - 10px);
+    }
+
+    .item-val {
+      font-size: 24px;
+      color: var(--outer);
+      @include laptop {
+        font-size: 20px;
+      }
+      @include tablet {
+        font-size: 18px;
+      }
+    }
+    .item-name {
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      color: rgba(48, 54, 60, 0.8);
+      @include tablet {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-archive-news {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+      gap: 10px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+  }
+}

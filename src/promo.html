@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+@@include("components/head.html")
+</head>
+<body class="body">
+
+  @@include("components/header.html")
+  @@include("components/burger.html")
+  @@include("components/modals.html")
+  
+  <main>
+    <div class="breadcrumbs-sect">
+      <div class="container">
+        <div class="breadcrumbs">
+          <div class="aioseo-breadcrumbs">
+            <span class="aioseo-breadcrumb">
+              <a href="https://iida.qorix.ru" title="Главная">Главная</a>
+            </span>
+            <span class="aioseo-breadcrumb-separator">/</span>
+            <span class="aioseo-breadcrumb">Акции</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include("components/s-archive-promo.html")
+  </main>
+
+  @@include("components/footer.html")
+  
+  <script src="./js/app.js?ver=@@versions.js"></script>
+</body>
+</html>

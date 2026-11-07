@@ -64,8 +64,8 @@ export function catalogSidebar() {
     function updateHeight() {
       sidebar.style.maxHeight = `${window.visualViewport.height}px`;
     }
+    updateHeight();
+    window.visualViewport.addEventListener("resize", updateHeight);
+    window.visualViewport.addEventListener("scroll", updateHeight);
   }
-  updateHeight();
-  window.visualViewport.addEventListener("resize", updateHeight);
-  window.visualViewport.addEventListener("scroll", updateHeight);
 }

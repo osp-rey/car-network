@@ -24,6 +24,7 @@
 @use "./ui/breadcrumbs";
 @use "./ui/oSelect";
 @use "./ui/catalog-pagination";
+@use "./ui/w-pagination";
 
 @use "./components/header";
 @use "./components/burger";
@@ -44,5 +45,9 @@
 @use "./components/s-faq";
 @use "./components/s-intro";
 @use "./components/s-catalog";
+@use "./components/s-archive-news";
+@use "./components/s-archive-promo";
+@use "./components/s-spec";
+@use "./components/s-exterior";
 
 @use "./components/footer";

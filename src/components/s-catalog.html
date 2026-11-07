@@ -1,9 +1,17 @@
 <section class="sect-p s-catalog bg-porcelain" id="s-catalog">
   <div class="container">
     <div class="s-catalog__wrap">
-      <aside class="s-catalog__sidebar">
+      <div
+        class="s-catalog__sidebar-overlay"
+        data-catalog-sidebar-close
+        id="catalog-sidebar-overlay"
+      ></div>
+      <aside class="s-catalog__sidebar" id="catalog-sidebar">
         <div class="s-catalog__sidebar-head">
           <div class="s-catalog__sidebar-title">Найдите свой автомобиль</div>
+          <div class="s-catalog__sidebar-close" data-catalog-sidebar-close>
+            <i class="icon-close"></i>
+          </div>
         </div>
         <div class="s-catalog__sidebar-filters">
           <div
@@ -46,11 +54,182 @@
               </div>
             </div>
           </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_160 bapf_wid_"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_ckbox_sqchck bapf_ccolaps">
+              <div class="bapf_head bapf_colaps_togl">
+                <h3 tabindex="0" class="bapf_hascolarr">
+                  Марка автомобиля
+                  <i class="bapf_colaps_smb fa fa-chevron-up"></i>
+                </h3>
+              </div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="solaris"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="solaris">Solaris</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="tenet"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="tenet">Tenet</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="haval"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="haval">HAVAL</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="kgm"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="kgm">KGM</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_160 bapf_wid_"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_ckbox_sqchck bapf_ccolaps">
+              <div class="bapf_head bapf_colaps_togl">
+                <h3 tabindex="0" class="bapf_hascolarr">
+                  Модель
+                  <i class="bapf_colaps_smb fa fa-chevron-up"></i>
+                </h3>
+              </div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="m-solaris"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="m-solaris">Solaris</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="m-tenet"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="m-tenet">Tenet</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="m-haval"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="m-haval">HAVAL</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="m-kgm"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="m-kgm">KGM</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_160 bapf_wid_"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_ckbox_sqchck bapf_ccolaps">
+              <div class="bapf_head bapf_colaps_togl">
+                <h3 tabindex="0" class="bapf_hascolarr">
+                  Модель
+                  <i class="bapf_colaps_smb fa fa-chevron-up"></i>
+                </h3>
+              </div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="c-1"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="c-1">Черный</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="c-2"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="c-2">Серый</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="c-3"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="c-3">Красный</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="c-4"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="c-4">Белый</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-catalog__sidebar-nav">
+          <div
+            class="bapf_sngl_hd_desktop berocket_single_filter_widget berocket_single_filter_widget_125 bapf_wid_"
+          >
+            <div class="bapf_sfilter">
+              <div class="bapf_body">
+                <button class="bapf_button bapf_update">Найти</button>
+              </div>
+            </div>
+          </div>
         </div>
       </aside>
       <div class="s-catalog__body">
         <div class="s-catalog__head">
-          <div class="s-title s-catalog__count">27 авто в наличии</div>
+          <div class="s-catalog__count">27 авто в наличии</div>
+          <div class="s-catalog__sidebar-open" id="catalog-sidebar-open">
+            <i class="icon-filters"></i>
+            <span>Фильтры</span>
+          </div>
           <div class="s-catalog__sort-wrap">
             <form class="woocommerce-ordering">
               <select name="orderby" class="orderby">
@@ -62,6 +241,85 @@
               </select>
               <input type="hidden" name="paged" value="1" />
             </form>
+          </div>
+        </div>
+        <div class="s-catalog__grid">
+          <a href="#" class="card-product">
+            <img
+              src="@img/card-product.jpg"
+              alt="image"
+              class="card-product__img"
+            />
+            <div class="card-product__body">
+              <div class="t-title card-product__title">TENET T4L</div>
+              <p class="card-product__content">Легендарный бюджетный седан</p>
+              <div class="card-product__bottom">
+                <div class="card-product__price">
+                  <div class="item-price">от 1 990 000 руб.</div>
+                  <div class="item-price _fill">от 19 900 руб/мес</div>
+                </div>
+                <div class="card-product__rect">
+                  <i class="icon-arrow-rotate"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card-product">
+            <img
+              src="@img/card-product.jpg"
+              alt="image"
+              class="card-product__img"
+            />
+            <div class="card-product__body">
+              <div class="t-title card-product__title">TENET T4L</div>
+              <p class="card-product__content">Легендарный бюджетный седан</p>
+              <div class="card-product__bottom">
+                <div class="card-product__price">
+                  <div class="item-price">от 1 990 000 руб.</div>
+                  <div class="item-price _fill">от 19 900 руб/мес</div>
+                </div>
+                <div class="card-product__rect">
+                  <i class="icon-arrow-rotate"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card-product">
+            <img
+              src="@img/card-product.jpg"
+              alt="image"
+              class="card-product__img"
+            />
+            <div class="card-product__body">
+              <div class="t-title card-product__title">TENET T4L</div>
+              <p class="card-product__content">Легендарный бюджетный седан</p>
+              <div class="card-product__bottom">
+                <div class="card-product__price">
+                  <div class="item-price">от 1 990 000 руб.</div>
+                  <div class="item-price _fill">от 19 900 руб/мес</div>
+                </div>
+                <div class="card-product__rect">
+                  <i class="icon-arrow-rotate"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="s-catalog__nav">
+          <div class="catalog-pagination">
+            <nav class="woocommerce-pagination">
+              <ul class="page-numbers">
+                <li>
+                  <span class="page-numbers current">1</span>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a class="next page-numbers" href="#">→</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

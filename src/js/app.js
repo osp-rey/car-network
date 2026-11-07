@@ -1,11 +1,16 @@
 import burger from "./functions/burger.js";
 import buttonsNote from "./functions/buttonsNote.js";
+import {
+  catalogFiltersToggle,
+  catalogSidebar,
+} from "./functions/catalogFilters.js";
 import changeModalTitle from "./functions/changeModalTitle.js";
 import handlerSelect from "./functions/handlerSelect.js";
 import headerScroll from "./functions/headerScroll.js";
 import hero from "./functions/hero.js";
 import inputmask from "./functions/inputmask.js";
 import map from "./functions/map.js";
+import oSelectHandler from "./functions/oSelect.js";
 import sliders from "./functions/sliders.js";
 import spoller from "./functions/spoller.js";
 
@@ -20,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
   inputmask();
   map();
   spoller();
+  oSelectHandler();
+  catalogFiltersToggle();
+  catalogSidebar();
 
   Fancybox.bind("[data-fancybox]", {
     on: {

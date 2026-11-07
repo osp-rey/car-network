@@ -1,0 +1,50 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.catalog-pagination {
+  ul.page-numbers {
+    @include flex-center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include laptop-min {
+      gap: 15px;
+    }
+  }
+
+  .prev,
+  .next {
+    display: none !important;
+  }
+  span,
+  a {
+    @include flex-center;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 8px;
+
+    transition:
+      color 0.3s ease,
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+
+    &.current {
+      pointer-events: none;
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+  }
+  a {
+    @include hover {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+  }
+}

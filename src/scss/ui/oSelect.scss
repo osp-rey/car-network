@@ -1,0 +1,108 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.o-select {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  &._open {
+    .o-select-btn {
+      i {
+        transform: rotate(180deg);
+      }
+    }
+    .o-select-body {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+.o-select-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  user-select: none;
+
+  transition: color 0.3s ease;
+
+  @include hover {
+    color: var(--primary);
+  }
+
+  .select-btn-text {
+    flex: 1;
+  }
+
+  i {
+    font-size: 12px;
+
+    transition: transform 0.3s ease;
+  }
+}
+.o-select-body {
+  --background: white;
+  --color: black;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background-color: var(--background);
+  color: var(--);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+  z-index: 10;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+
+  transition:
+    transform 0.3s ease,
+    visibility 0.3s ease,
+    opacity 0.3s ease;
+}
+.o-select-body-inside {
+  max-height: 180px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 20px;
+  }
+}
+.o-select-option {
+  --background-h: var(--mercury);
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  user-select: none;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+
+  @include hover {
+    background-color: var(--background-h);
+  }
+  @include laptop-min {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  &._active {
+    pointer-events: none;
+    background-color: var(--mercury);
+  }
+}

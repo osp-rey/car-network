@@ -11,8 +11,11 @@ import hero from "./functions/hero.js";
 import inputmask from "./functions/inputmask.js";
 import map from "./functions/map.js";
 import oSelectHandler from "./functions/oSelect.js";
+import previewToggle from "./functions/previewToggle.js";
 import sliders from "./functions/sliders.js";
 import spoller from "./functions/spoller.js";
+import stickyTop from "./functions/stickyTop.js";
+import tab from "./functions/tab.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   burger();
@@ -28,6 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
   oSelectHandler();
   catalogFiltersToggle();
   catalogSidebar();
+  previewToggle();
+  tab();
+  stickyTop();
 
   Fancybox.bind("[data-fancybox]", {
     on: {

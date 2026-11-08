@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" href="./files/favicon.ico" />
+<link rel="stylesheet" href="./files/icomoon/style.css" />
+<link rel="stylesheet" href="./files/swiper/swiper.min.css" />
+<link rel="stylesheet" href="./files/fancybox/fancybox.min.css" />
+<link rel="stylesheet" href="./css/main.css?ver=mw7qg129" />
+<title>AUTO</title>
+
+</head>
+<body class="body">
+
+  <header class="header">
+  <div class="container">
+    <div class="header__wrap">
+      <div class="header__logos">
+        <a href="/" class="header__logo">
+          <img src="img/logo-dark.svg" alt="logo" class="logo-dark" />
+        </a>
+        <div class="header__logo-all">
+          <img src="img/logo-all-dark.svg" alt="logo" class="logo-dark">
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="list header__list">
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <div class="header__contacts-info">
+          <a href="tel:+79999999999" class="header__tel">+7 (999) 999-99-99</a>
+          <div class="header__address">
+            <i class="icon-location"></i>
+            <span>г. Казань, Ямашева д. 1</span>
+          </div>
+        </div>
+        <a
+          href="#modal-feedback"
+          data-fancybox
+          data-modal-title="Записаться на тест-драйв"
+          data-btn-note="Записаться на тест-драйв"
+          data-targt-note="#modal-feedback .input-note"
+          class="btn-s header__btn"
+        >
+          Записаться на тест-драйв
+        </a>
+      </div>
+      <div class="header__mob-buttons">
+        <a href="tel:+79999999999" target="_blank" class="header__mob-btn">
+          <i class="icon-tel"></i>
+        </a>
+        <div
+          target="_blank"
+          rel="nofollow"
+          class="header__mob-btn"
+          id="burger-open"
+        >
+          <i class="icon-burger"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <aside>
+  <div class="burger-overlay" id="burger-overlay" data-burger-close></div>
+  <div class="burger" id="burger">
+    <div class="burger__head">
+      <a href="/" class="burger__logo">
+        <img src="img/logo-dark.svg" alt="logo" />
+      </a>
+      <div class="burger__close" data-burger-close>
+        <i class="icon-close"></i>
+      </div>
+    </div>
+    <ul class="list burger__list">
+      <li><a href="#">Каталог</a></li>
+      <li><a href="#">Акции</a></li>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <div class="burger__contacts-info">
+      <a href="tel:+79999999999" class="burger__tel">+7 (999) 999-99-99</a>
+      <div class="burger__address">
+        <i class="icon-location"></i>
+        <span>г. Казань, Ямашева д. 1</span>
+      </div>
+    </div>
+    <a
+      href="#modal-feedback"
+      data-fancybox
+      data-btn-note="Записаться на тест-драйв"
+      data-targt-note="#modal-feedback .input-note"
+      class="btn-s burger__btn"
+    >
+      Записаться на тест-драйв
+    </a>
+  </div>
+</aside>
+
+  <aside>
+  <div class="modal" id="modal-feedback">
+    <div class="modal__body">
+      <div class="modal__head">
+        <div class="modal__title t-title" data-text="Связаться с нами">
+          Связаться с нами
+        </div>
+        <div class="content-box modal__content">
+          <p>Оставьте заявку и мы свяжемся с Вами в ближайшее время.</p>
+        </div>
+        <form action="#" class="modal__form">
+          <div class="form-grid">
+            <div style="display: none">
+              <input type="text" class="input-note" />
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Телефон" class="input" />
+            </div>
+            <div class="check-wrap">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-297"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я соглашаюсь с
+                          <a href="/personal-data">
+                            Правилами обработки персональных данных
+                          </a>
+                          и
+                          <a href="/privacy-policy">
+                            Политикой конфиденциальности
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+            <button type="submit" class="btn-s">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</aside>
+
+  
+  <main>
+    <section class="s-intro">
+  <picture class="sect-bg">
+    <img src="img/intro.jpg" alt="background" />
+  </picture>
+  <div class="s-intro__breadcrumbs-wrap">
+    <div class="container">
+      <div class="breadcrumbs">
+        <div class="aioseo-breadcrumbs">
+          <span class="aioseo-breadcrumb">
+            <a href="https://iida.qorix.ru" title="Главная">Главная</a>
+          </span>
+          <span class="aioseo-breadcrumb-separator">/</span>
+          <span class="aioseo-breadcrumb">Каталог</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="s-intro__inside">
+    <div class="container">
+      <div class="s-intro__wrap">
+        <h1 class="m-title s-intro__title">Каталог автомобилей</h1>
+        <p class="s-intro__content">
+          В наличие широкий ассортимент марок и моделей
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p s-catalog bg-porcelain" id="s-catalog">
+  <div class="container">
+    <div class="s-catalog__wrap">
+      <div
+        class="s-catalog__sidebar-overlay"
+        data-catalog-sidebar-close
+        id="catalog-sidebar-overlay"
+      ></div>
+      <aside class="s-catalog__sidebar" id="catalog-sidebar">
+        <div class="s-catalog__sidebar-head">
+          <div class="s-catalog__sidebar-title">Найдите свой автомобиль</div>
+          <div class="s-catalog__sidebar-close" data-catalog-sidebar-close>
+            <i class="icon-close"></i>
+          </div>
+        </div>
+        <div class="s-catalog__sidebar-filters">
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_121 bapf_wid_"
+          >
+            <div
+              class="bapf_sfilter bapf_slidr bapf_slidr_jqrui bapf_slidr_ready"
+            >
+              <div class="bapf_head"><h3>Цена</h3></div>
+              <div class="bapf_body">
+                <div class="bapf_slidr_all">
+                  <span class="bapf_from">
+                    <span class="bapf_tbprice">₽</span>
+                    <input type="text" placeholder="6000" />
+                  </span>
+                  <span class="bapf_to">
+                    <span class="bapf_tbprice">₽</span>
+                    <input type="text" placeholder="6000" />
+                  </span>
+                  <div
+                    class="bapf_slidr_main bapf_slidr_num ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                    data-display="wc_price"
+                  >
+                    <div
+                      class="ui-slider-range ui-corner-all ui-widget-header"
+                      style="left: 0%; width: 100%"
+                    ></div>
+                    <span
+                      tabindex="0"
+                      class="ui-slider-handle ui-corner-all ui-state-default"
+                      style="left: 0%"
+                    ></span>
+                    <span
+                      tabindex="0"
+                      class="ui-slider-handle ui-corner-all ui-state-default"
+                      style="left: 100%"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_160 bapf_wid_"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_ckbox_sqchck bapf_ccolaps">
+              <div class="bapf_head bapf_colaps_togl">
+                <h3 tabindex="0" class="bapf_hascolarr">
+                  Марка автомобиля
+                  <i class="bapf_colaps_smb fa fa-chevron-up"></i>
+                </h3>
+              </div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="solaris"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="solaris">Solaris</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="tenet"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="tenet">Tenet</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="haval"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="haval">HAVAL</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="kgm"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="kgm">KGM</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_160 bapf_wid_"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_ckbox_sqchck bapf_ccolaps">
+              <div class="bapf_head bapf_colaps_togl">
+                <h3 tabindex="0" class="bapf_hascolarr">
+                  Модель
+                  <i class="bapf_colaps_smb fa fa-chevron-up"></i>
+                </h3>
+              </div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="m-solaris"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="m-solaris">Solaris</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="m-tenet"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="m-tenet">Tenet</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="m-haval"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="m-haval">HAVAL</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="m-kgm"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="m-kgm">KGM</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_160 bapf_wid_"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_ckbox_sqchck bapf_ccolaps">
+              <div class="bapf_head bapf_colaps_togl">
+                <h3 tabindex="0" class="bapf_hascolarr">
+                  Модель
+                  <i class="bapf_colaps_smb fa fa-chevron-up"></i>
+                </h3>
+              </div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="c-1"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="c-1">Черный</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="c-2"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="c-2">Серый</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="c-3"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="c-3">Красный</label>
+                  </li>
+                  <li>
+                    <input
+                      data-name="Бежевый"
+                      id="c-4"
+                      type="checkbox"
+                      value="bezhevyj"
+                    />
+                    <label for="c-4">Белый</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-catalog__sidebar-nav">
+          <div
+            class="bapf_sngl_hd_desktop berocket_single_filter_widget berocket_single_filter_widget_125 bapf_wid_"
+          >
+            <div class="bapf_sfilter">
+              <div class="bapf_body">
+                <button class="bapf_button bapf_update">Найти</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="s-catalog__body">
+        <div class="s-catalog__head">
+          <div class="s-catalog__count">27 авто в наличии</div>
+          <div class="s-catalog__sidebar-open" id="catalog-sidebar-open">
+            <i class="icon-filters"></i>
+            <span>Фильтры</span>
+          </div>
+          <div class="s-catalog__sort-wrap">
+            <form class="woocommerce-ordering">
+              <select name="orderby" class="orderby">
+                <option value="menu_order" selected="selected">
+                  По популярности
+                </option>
+                <option value="popularity">По возрастанию цены</option>
+                <option value="rating">По убыванию цены</option>
+              </select>
+              <input type="hidden" name="paged" value="1" />
+            </form>
+          </div>
+        </div>
+        <div class="s-catalog__grid">
+          <a href="#" class="card-product">
+            <img
+              src="img/card-product.jpg"
+              alt="image"
+              class="card-product__img"
+            />
+            <div class="card-product__body">
+              <div class="t-title card-product__title">TENET T4L</div>
+              <p class="card-product__content">Легендарный бюджетный седан</p>
+              <div class="card-product__bottom">
+                <div class="card-product__price">
+                  <div class="item-price">от 1 990 000 руб.</div>
+                  <div class="item-price _fill">от 19 900 руб/мес</div>
+                </div>
+                <div class="card-product__rect">
+                  <i class="icon-arrow-rotate"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card-product">
+            <img
+              src="img/card-product.jpg"
+              alt="image"
+              class="card-product__img"
+            />
+            <div class="card-product__body">
+              <div class="t-title card-product__title">TENET T4L</div>
+              <p class="card-product__content">Легендарный бюджетный седан</p>
+              <div class="card-product__bottom">
+                <div class="card-product__price">
+                  <div class="item-price">от 1 990 000 руб.</div>
+                  <div class="item-price _fill">от 19 900 руб/мес</div>
+                </div>
+                <div class="card-product__rect">
+                  <i class="icon-arrow-rotate"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card-product">
+            <img
+              src="img/card-product.jpg"
+              alt="image"
+              class="card-product__img"
+            />
+            <div class="card-product__body">
+              <div class="t-title card-product__title">TENET T4L</div>
+              <p class="card-product__content">Легендарный бюджетный седан</p>
+              <div class="card-product__bottom">
+                <div class="card-product__price">
+                  <div class="item-price">от 1 990 000 руб.</div>
+                  <div class="item-price _fill">от 19 900 руб/мес</div>
+                </div>
+                <div class="card-product__rect">
+                  <i class="icon-arrow-rotate"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="s-catalog__nav">
+          <div class="catalog-pagination">
+            <nav class="woocommerce-pagination">
+              <ul class="page-numbers">
+                <li>
+                  <span class="page-numbers current">1</span>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a class="next page-numbers" href="#">→</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__logos">
+        <a href="/" class="footer__logo">
+          <img src="img/logo-white.svg" alt="logo" />
+        </a>
+        <img
+          src="img/logo-all-white.svg"
+          alt="logo"
+          class="footer__logo-all"
+        />
+      </div>
+      <ul class="list footer__list">
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Трейд-ин</a></li>
+        <li><a href="#">Кредит</a></li>
+        <li><a href="#">Тест-драйв</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer__contacts">
+        <a href="tel:+79999999999" class="footer__tel">+7 (999) 999-99-99</a>
+        <div class="footer__address">г. Казань, Ямашева д. 1</div>
+        <div class="footer__work-time">Ежедневно с 9:00 до 20:00</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-content">
+        <div class="item-text">
+          Все права защищены. Копирование материалов строго по согласию
+          администрации сайта.
+        </div>
+        <div class="item-text">© ООО "Название", ИНН: 0000000000</div>
+      </div>
+      <ul class="list footer__bottom-list">
+        <li><a href="/privacy-policy">Политика конфиденциальности</a></li>
+        <li>
+          <a href="/personal-data">Политика обработки персональных данных</a>
+        </li>
+        <li>
+          <a href="/promotional-newsletter">
+            Получение информационно-рекламной рассылки
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="./files/swiper/swiper.min.js"></script>
+<script src="./files/fancybox/fancybox.min.js"></script>
+<script src="./files/inputmask/inputmask.min.js"></script>
+
+  
+  <script src="./js/app.js?ver=mw7qg129"></script>
+</body>
+</html>

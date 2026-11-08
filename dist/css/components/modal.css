@@ -1,0 +1,45 @@
+.fancybox__backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  display: none;
+  color: var(--black);
+  width: 600px;
+  max-width: 100%;
+  border-radius: 16px;
+  padding: 30px;
+  cursor: auto;
+}
+
+.modal__body {
+  width: 100%;
+}
+
+.modal__content {
+  margin-top: 25px;
+}
+
+.modal__form {
+  margin-top: 25px;
+}
+
+.modal__form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.modal__form .btn-s {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .modal {
+    padding: 20px;
+  }
+
+  .modal__form .form-grid {
+    gap: 14px;
+  }
+}

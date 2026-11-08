@@ -1,0 +1,21 @@
+.s-notfound {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.s-notfound__num {
+  font-weight: 600;
+  font-size: 140px;
+}
+
+.s-notfound__descr {
+  margin: 20px 0;
+}
+
+.s-notfound__btn {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+}

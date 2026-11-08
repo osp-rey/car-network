@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" href="./files/favicon.ico" />
+<link rel="stylesheet" href="./files/icomoon/style.css" />
+<link rel="stylesheet" href="./files/swiper/swiper.min.css" />
+<link rel="stylesheet" href="./files/fancybox/fancybox.min.css" />
+<link rel="stylesheet" href="./css/main.css?ver=mw7qg129" />
+<title>AUTO</title>
+
+</head>
+<body class="body">
+
+  <header class="header _fixed">
+  <div class="container">
+    <div class="header__wrap">
+      <div class="header__logos">
+        <a href="/" class="header__logo">
+          <img src="img/logo-dark.svg" alt="logo" class="logo-dark" />
+          <img src="img/logo-white.svg" alt="logo" class="logo-white" />
+        </a>
+        <div class="header__logo-all">
+          <img src="img/logo-all-dark.svg" alt="logo" class="logo-dark">
+          <img src="img/logo-all-white.svg" alt="logo" class="logo-white">
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="list header__list">
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <div class="header__contacts-info">
+          <a href="tel:+79999999999" class="header__tel">+7 (999) 999-99-99</a>
+          <div class="header__address">
+            <i class="icon-location"></i>
+            <span>г. Казань, Ямашева д. 1</span>
+          </div>
+        </div>
+        <a
+          href="#modal-feedback"
+          data-fancybox
+          data-modal-title="Записаться на тест-драйв"
+          data-btn-note="Записаться на тест-драйв"
+          data-targt-note="#modal-feedback .input-note"
+          class="btn-s header__btn"
+        >
+          Записаться на тест-драйв
+        </a>
+      </div>
+      <div class="header__mob-buttons">
+        <a href="tel:+79999999999" target="_blank" class="header__mob-btn">
+          <i class="icon-tel"></i>
+        </a>
+        <div
+          target="_blank"
+          rel="nofollow"
+          class="header__mob-btn"
+          id="burger-open"
+        >
+          <i class="icon-burger"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <aside>
+  <div class="burger-overlay" id="burger-overlay" data-burger-close></div>
+  <div class="burger" id="burger">
+    <div class="burger__head">
+      <a href="/" class="burger__logo">
+        <img src="img/logo-dark.svg" alt="logo" />
+      </a>
+      <div class="burger__close" data-burger-close>
+        <i class="icon-close"></i>
+      </div>
+    </div>
+    <ul class="list burger__list">
+      <li><a href="#">Каталог</a></li>
+      <li><a href="#">Акции</a></li>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <div class="burger__contacts-info">
+      <a href="tel:+79999999999" class="burger__tel">+7 (999) 999-99-99</a>
+      <div class="burger__address">
+        <i class="icon-location"></i>
+        <span>г. Казань, Ямашева д. 1</span>
+      </div>
+    </div>
+    <a
+      href="#modal-feedback"
+      data-fancybox
+      data-btn-note="Записаться на тест-драйв"
+      data-targt-note="#modal-feedback .input-note"
+      class="btn-s burger__btn"
+    >
+      Записаться на тест-драйв
+    </a>
+  </div>
+</aside>
+
+  <aside>
+  <div class="modal" id="modal-feedback">
+    <div class="modal__body">
+      <div class="modal__head">
+        <div class="modal__title t-title" data-text="Связаться с нами">
+          Связаться с нами
+        </div>
+        <div class="content-box modal__content">
+          <p>Оставьте заявку и мы свяжемся с Вами в ближайшее время.</p>
+        </div>
+        <form action="#" class="modal__form">
+          <div class="form-grid">
+            <div style="display: none">
+              <input type="text" class="input-note" />
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Телефон" class="input" />
+            </div>
+            <div class="check-wrap">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-297"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я соглашаюсь с
+                          <a href="/personal-data">
+                            Правилами обработки персональных данных
+                          </a>
+                          и
+                          <a href="/privacy-policy">
+                            Политикой конфиденциальности
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+            <button type="submit" class="btn-s">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</aside>
+
+  
+  <main>
+    <section class="s-hero" id="s-hero">
+  <div class="swiper s-hero__slider-bg">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture class="sect-bg">
+          <img src="img/hero.jpg" alt="image" />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture class="sect-bg">
+          <img src="img/hero.jpg" alt="image" />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture class="sect-bg">
+          <img src="img/hero.jpg" alt="image" />
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div class="swiper s-hero__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide s-hero__slide">
+        <div class="s-hero__slide-body">
+          <div class="container">
+            <div class="s-hero__slide-container">
+              <div class="m-title s-hero__slide-title">
+                SOLARIS KRS
+                <br />
+                В КРЕДИТ
+              </div>
+              <div class="content-box s-hero__slide-content">
+                <p>
+                  Кредит со ставкой от 0,01 % годовых.
+                  <br />
+                  Рассрочка 0 % без первого взноса
+                </p>
+              </div>
+              <div class="s-hero__slide-buttons">
+                <a href="#" class="btn-s">Выбрать автомобиль</a>
+                <a
+                  href="#modal-feedback"
+                  data-fancybox
+                  data-btn-note="Записаться на тест-драйв"
+                  data-target-note="#modal-feedback .input-note"
+                  data-modal-title="Записаться на тест-драйв"
+                  class="btn-s _outline-white"
+                >
+                  Записаться на тест-драйв
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide s-hero__slide">
+        <div class="s-hero__slide-body">
+          <div class="container">
+            <div class="s-hero__slide-container">
+              <div class="m-title s-hero__slide-title">
+                SOLARIS KRS В КРЕДИТ
+              </div>
+              <div class="content-box s-hero__slide-content">
+                <p>
+                  Кредит со ставкой от 0,01 % годовых.
+                  <br />
+                  Рассрочка 0 % без первого взноса
+                </p>
+              </div>
+              <div class="s-hero__slide-buttons">
+                <a href="#" class="btn-s">Выбрать автомобиль</a>
+                <a
+                  href="#modal-feedback"
+                  data-fancybox
+                  data-btn-note="Записаться на тест-драйв"
+                  data-target-note="#modal-feedback .input-note"
+                  data-modal-title="Записаться на тест-драйв"
+                  class="btn-s _outline-white"
+                >
+                  Записаться на тест-драйв
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide s-hero__slide">
+        <div class="s-hero__slide-body">
+          <div class="container">
+            <div class="s-hero__slide-container">
+              <div class="m-title s-hero__slide-title">
+                SOLARIS KRS В КРЕДИТ
+              </div>
+              <div class="content-box s-hero__slide-content">
+                <p>
+                  Кредит со ставкой от 0,01 % годовых.
+                  <br />
+                  Рассрочка 0 % без первого взноса
+                </p>
+              </div>
+              <div class="s-hero__slide-buttons">
+                <a href="#" class="btn-s">Выбрать автомобиль</a>
+                <a
+                  href="#modal-feedback"
+                  data-fancybox
+                  data-btn-note="Записаться на тест-драйв"
+                  data-target-note="#modal-feedback .input-note"
+                  data-modal-title="Записаться на тест-драйв"
+                  class="btn-s _outline-white"
+                >
+                  Записаться на тест-драйв
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="s-hero__slider-nav">
+    <div class="container">
+      <div class="s-hero__slider-nav-wrap">
+        <div></div>
+        <div class="slider-pagination _white"></div>
+        <div class="slider-arrows">
+          <div class="slider-arrow _outline-white _prev">
+            <i class="icon-prev"></i>
+          </div>
+          <div class="slider-arrow _outline-white _next">
+            <i class="icon-next"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-cats" id="s-cats">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Все марки</h2>
+    </div>
+    <div class="swiper s-cats__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="card-cat">
+            <img src="img/cat.jpg" alt="image" class="item-img" />
+            <div class="item-name t-title">Solaris</div>
+            <div class="item-rect">
+              <i class="icon-arrow-rotate"></i>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-cat">
+            <img src="img/cat.jpg" alt="image" class="item-img" />
+            <div class="item-name t-title">Tenet/Chery</div>
+            <div class="item-rect">
+              <i class="icon-arrow-rotate"></i>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-cat">
+            <img src="img/cat.jpg" alt="image" class="item-img" />
+            <div class="item-name t-title">KGM</div>
+            <div class="item-rect">
+              <i class="icon-arrow-rotate"></i>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-cat">
+            <img src="img/cat.jpg" alt="image" class="item-img" />
+            <div class="item-name t-title">HAVAL</div>
+            <div class="item-rect">
+              <i class="icon-arrow-rotate"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-pagination"></div>
+    <a href="#" class="s-cats__more">
+      <span>Смотреть все марки</span>
+      <i class="icon-next"></i>
+    </a>
+  </div>
+</section>
+
+    <section class="sect-p s-models bg-porcelain" id="s-models">
+  <div class="container">
+    <div class="sect-head">
+      <div class="sect-head__wrap">
+        <h2 class="s-title">Модели в наличии</h2>
+        <a href="#" class="btn-s sect-head__btn">
+          <span>Все модели</span>
+          <i class="icon-next"></i>
+        </a>
+      </div>
+    </div>
+    <div class="swiper s-models__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="card-product-p">
+            <div class="t-title item-title">Solaris KRS</div>
+            <div class="item-text">Легендарный бюджетный седан</div>
+            <div class="item-prices">
+              <div class="item-price">от 1 990 000 руб.</div>
+              <div class="item-price _fill">от 19 900 руб/мес</div>
+            </div>
+            <img src="img/card-product-p.png" alt="image" class="item-img" />
+            <div class="btn-s item-btn _outline-black">Подробнее о модели</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-product-p">
+            <div class="t-title item-title">Solaris KRS</div>
+            <div class="item-text">Легендарный бюджетный седан</div>
+            <div class="item-prices">
+              <div class="item-price">от 1 990 000 руб.</div>
+              <div class="item-price _fill">от 19 900 руб/мес</div>
+            </div>
+            <img src="img/card-product-p.png" alt="image" class="item-img" />
+            <div class="btn-s item-btn _outline-black">Подробнее о модели</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-product-p">
+            <div class="t-title item-title">Solaris KRS</div>
+            <div class="item-text">Легендарный бюджетный седан</div>
+            <div class="item-prices">
+              <div class="item-price">от 1 990 000 руб.</div>
+              <div class="item-price _fill">от 19 900 руб/мес</div>
+            </div>
+            <img src="img/card-product-p.png" alt="image" class="item-img" />
+            <div class="btn-s item-btn _outline-black">Подробнее о модели</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-product-p">
+            <div class="t-title item-title">Solaris KRS</div>
+            <div class="item-text">Легендарный бюджетный седан</div>
+            <div class="item-prices">
+              <div class="item-price">от 1 990 000 руб.</div>
+              <div class="item-price _fill">от 19 900 руб/мес</div>
+            </div>
+            <img src="img/card-product-p.png" alt="image" class="item-img" />
+            <div class="btn-s item-btn _outline-black">Подробнее о модели</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-pagination"></div>
+    <a href="#" class="btn-s sect-mob-btn">
+      <span>Все модели</span>
+      <i class="icon-next"></i>
+    </a>
+  </div>
+</section>
+
+    <section class="s-promo sect-m" id="s-promo">
+  <div class="container">
+    <div class="sect-head">
+      <div class="sect-head__wrap">
+        <h2 class="s-title">Все акции и специальные предложения</h2>
+        <div class="slider-arrows">
+          <div class="slider-arrow _prev">
+            <i class="icon-prev"></i>
+          </div>
+          <div class="slider-arrow _next">
+            <i class="icon-next"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper s-promo__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="card-promo">
+            <img src="img/promo.jpg" alt="background" class="card-promo__bg" />
+            <div class="card-promo__date">01.10.2026 - 31.10.2026</div>
+            <div class="card-promo__wrap">
+              <div class="card-promo__info">
+                <div class="card-promo__title t-title">HAVAL H3</div>
+                <div class="card-promo__price">
+                  <div class="item-name t-title">ВЫГОДА ДО</div>
+                  <div class="item-price">250 000 РУБ</div>
+                </div>
+              </div>
+              <div class="card-promo__rect">
+                <i class="icon-arrow-rotate"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-promo">
+            <img src="img/promo.jpg" alt="background" class="card-promo__bg" />
+            <div class="card-promo__date">01.10.2026 - 31.10.2026</div>
+            <div class="card-promo__wrap">
+              <div class="card-promo__info">
+                <div class="card-promo__title t-title">
+                  КРЕДИТ
+                  <br />
+                  БЕЗ ПЕРВОНАЧАЛЬНОГО ВЗНОСА
+                </div>
+              </div>
+              <div class="card-promo__rect">
+                <i class="icon-arrow-rotate"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-promo">
+            <img src="img/promo.jpg" alt="background" class="card-promo__bg" />
+            <div class="card-promo__date">01.10.2026 - 31.10.2026</div>
+            <div class="card-promo__wrap">
+              <div class="card-promo__info">
+                <div class="card-promo__title t-title">HAVAL H3</div>
+                <div class="card-promo__price">
+                  <div class="item-name t-title">ВЫГОДА ДО</div>
+                  <div class="item-price">250 000 РУБ</div>
+                </div>
+              </div>
+              <div class="card-promo__rect">
+                <i class="icon-arrow-rotate"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-promo">
+            <img src="img/promo.jpg" alt="background" class="card-promo__bg" />
+            <div class="card-promo__date">01.10.2026 - 31.10.2026</div>
+            <div class="card-promo__wrap">
+              <div class="card-promo__info">
+                <div class="card-promo__title t-title">
+                  КРЕДИТ
+                  <br />
+                  БЕЗ ПЕРВОНАЧАЛЬНОГО ВЗНОСА
+                </div>
+              </div>
+              <div class="card-promo__rect">
+                <i class="icon-arrow-rotate"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-scrollbar"></div>
+  </div>
+</section>
+
+    <section class="sect-p s-test" id="s-test">
+  <div class="container">
+    <div class="s-test__wrap">
+      <div class="sect-head">
+        <h2 class="s-title">
+          Запишитесь
+          <br />
+          на тест-драйв
+        </h2>
+        <div class="content-box s-test__content sect-head__content">
+          <p>
+            Запишитесь на пробную поездку
+            <br />
+            и получите индивидуальное предложение
+          </p>
+        </div>
+      </div>
+      <div data-cars-options="Значение 1, Значение 2">
+        <form action="#" class="s-test__form">
+          <div class="form-grid">
+            <div class="form-control _full">
+              <input
+                type="text"
+                placeholder="Укажите ваш номер телефона"
+                class="input"
+              />
+            </div>
+            <div class="form-control">
+              <div class="select" data-target-options="cars">
+                <div class="select-btn">
+                  <input
+                    type="text"
+                    placeholder="Укажите модель"
+                    readonly
+                    class="input select-input"
+                  />
+                  <i class="icon-bottom select-arrow"></i>
+                </div>
+                <div class="select-body"></div>
+              </div>
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Выберите удобную дату"
+                class="input"
+              />
+            </div>
+            <div class="form-control _full">
+              <div class="check-wrap">
+                <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="acceptance-297"
+                          value="1"
+                          aria-invalid="false"
+                        />
+                        <span class="wpcf7-list-item-label">
+                          <span>
+                            Я соглашаюсь с
+                            <a href="/personal-data">
+                              Правилами обработки персональных данных
+                            </a>
+                            и
+                            <a href="/privacy-policy">
+                              Политикой конфиденциальности
+                            </a>
+                          </span>
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <button type="submit" class="btn-s">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <picture class="sect-bg s-test__bg">
+    <img src="img/test.jpg" alt="background" />
+  </picture>
+</section>
+
+    <section class="sect-m s-steps" id="s-steps">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Как получить кредит</h2>
+    </div>
+    <div class="s-steps__grid">
+      <div class="s-steps__item">
+        <div class="t-title item-title">Отправьте заявку</div>
+        <div class="item-body">
+          <p class="item-content">
+            Заполните форму и отправьте её в дилерский центр
+          </p>
+          <a
+            href="#modal-feedback"
+            data-fancybox
+            data-modal-title="Оформить кредит"
+            data-btn-note="Оформить кредит"
+            data-target-note="#modal-feedback .input-note"
+            class="btn-s item-btn"
+          >
+            Оформить кредит
+          </a>
+        </div>
+        <div class="item-num">1</div>
+      </div>
+      <div class="s-steps__item">
+        <div class="t-title item-title">Получите одобрение</div>
+        <div class="item-body">
+          <p class="item-content">
+            Вы можете отправить заявку через дилерский центр лично или удаленно
+          </p>
+          <div class="item-num">2</div>
+        </div>
+      </div>
+      <div class="s-steps__item">
+        <div class="t-title item-title">Оформите документы</div>
+        <div class="item-body">
+          <p class="item-content">
+            Подпишите кредитный договор и договор купли-продажи
+          </p>
+          <div class="item-num">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="s-calc" id="s-calc">
+  <div class="container">
+    <div class="s-calc__wrap">
+      <div class="s-calc__info">
+        <div class="sect-head">
+          <h2 class="s-title">Расчет стоимости кредита</h2>
+          <div class="content-box sect-head__content">
+            <p>
+              Специальные программы покупки в кредит.
+              <br />
+              Сниженные процентные ставки при поддержке производителя
+            </p>
+          </div>
+        </div>
+        <div data-cars-options="Значение 1, Значение 2, Значение 3">
+          <form action="#" class="s-calc__form">
+            <div class="form-grid">
+              <div class="form-control">
+                <input type="text" placeholder="Имя" class="input" />
+              </div>
+              <div class="form-control">
+                <input type="tel" placeholder="Телефон" class="input" />
+              </div>
+              <div class="form-control _full">
+                <div class="select" data-target-options="cars">
+                  <div class="select-btn">
+                    <input
+                      type="text"
+                      placeholder="Укажите модель"
+                      readonly
+                      class="input select-input"
+                    />
+                    <i class="icon-bottom select-arrow"></i>
+                  </div>
+                  <div class="select-body"></div>
+                </div>
+              </div>
+              <div class="form-control">
+                <input type="text" placeholder="Срок кредита" class="input" />
+              </div>
+              <div class="form-control">
+                <input
+                  type="text"
+                  placeholder="Первоначальный взнос"
+                  class="input"
+                />
+              </div>
+              <div class="form-control _full">
+                <div class="check-wrap">
+                  <span
+                    class="wpcf7-form-control-wrap"
+                    data-name="acceptance-297"
+                  >
+                    <span class="wpcf7-form-control wpcf7-acceptance">
+                      <span class="wpcf7-list-item">
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="acceptance-297"
+                            value="1"
+                            aria-invalid="false"
+                          />
+                          <span class="wpcf7-list-item-label">
+                            <span>
+                              Я соглашаюсь с
+                              <a href="/personal-data">
+                                Правилами обработки персональных данных
+                              </a>
+                              и
+                              <a href="/privacy-policy">
+                                Политикой конфиденциальности
+                              </a>
+                            </span>
+                          </span>
+                        </label>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <button type="submit" class="btn-s">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="s-calc__gallery">
+        <img src="img/calc.jpg" alt="image" class="s-calc__img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p s-tradein bg-porcelain" id="s-tradein">
+  <div class="container">
+    <div class="s-tradein__body">
+      <picture class="sect-bg">
+        <img src="img/tradein-bg.jpg" alt="background" />
+      </picture>
+      <div class="s-tradein__main">
+        <div class="s-tradein__main-container">
+          <h2 class="t-title s-tradein__title">Выгодный обмен трейд-ин</h2>
+          <div class="content-box s-tradein__content">
+            <p>
+              Выгодный обмен вашего старого
+              <br />
+              автомобиля на новый
+            </p>
+          </div>
+          <a
+            href="#modal-feedback"
+            data-fancybox
+            data-modal-title="Рассчитать трейд-ин"
+            data-btn-note="Рассчитать трейд-ин"
+            data-target-note="#modal-feedback .input-note"
+            class="btn-s _white s-tradein__btn"
+          >
+            <span>Рассчитать трейд-ин</span>
+            <i class="icon-next"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-about" id="s-about">
+  <div class="container">
+    <div class="s-about__wrap">
+      <div class="s-about__info">
+        <h2 class="s-title s-about__title">Купить автомобиль <br> у дилера в Казани</h2>
+        <div class="content-box s-about__content">
+          <p>
+            Мы, компания “Название” занимаемся продажей новых автомобилей
+            предоставляем услуги сервиса в России.
+          </p>
+          <p>
+            Нашими клиентами являются физические и юридические лица – покупатели и
+            продавцы автомобилей; производители и дистрибьюторы автомобильных
+            брендов.
+          </p>
+        </div>
+        <img src="img/about-logo.svg" alt="logo" class="s-about__logo">
+      </div>
+      <img src="img/about-img.jpg" alt="image" class="s-about__img">
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p s-news bg-porcelain" id="s-news">
+  <div class="container">
+    <div class="sect-head">
+      <div class="sect-head__wrap">
+        <h2 class="s-title">Новости нашего дилерского центра</h2>
+        <div class="slider-arrows">
+          <div class="slider-arrow _prev">
+            <i class="icon-prev"></i>
+          </div>
+          <div class="slider-arrow _next">
+            <i class="icon-next"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper s-news__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <img src="img/new.jpg" alt="image" class="card-new__img" />
+            <div class="card-new__body">
+              <div class="card-new__date">01.11.2026</div>
+              <div class="card-new__title t-title">
+                Новый дилерский центр в Казани
+              </div>
+              <div class="card-new__btn">
+                <span>Подробнее</span>
+                <i class="icon-next"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <img src="img/new.jpg" alt="image" class="card-new__img" />
+            <div class="card-new__body">
+              <div class="card-new__date">01.11.2026</div>
+              <div class="card-new__title t-title">
+                Новый дилерский центр в Казани
+              </div>
+              <div class="card-new__btn">
+                <span>Подробнее</span>
+                <i class="icon-next"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <img src="img/new.jpg" alt="image" class="card-new__img" />
+            <div class="card-new__body">
+              <div class="card-new__date">01.11.2026</div>
+              <div class="card-new__title t-title">
+                Новый дилерский центр в Казани
+              </div>
+              <div class="card-new__btn">
+                <span>Подробнее</span>
+                <i class="icon-next"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <img src="img/new.jpg" alt="image" class="card-new__img" />
+            <div class="card-new__body">
+              <div class="card-new__date">01.11.2026</div>
+              <div class="card-new__title t-title">
+                Новый дилерский центр в Казани
+              </div>
+              <div class="card-new__btn">
+                <span>Подробнее</span>
+                <i class="icon-next"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <img src="img/new.jpg" alt="image" class="card-new__img" />
+            <div class="card-new__body">
+              <div class="card-new__date">01.11.2026</div>
+              <div class="card-new__title t-title">
+                Новый дилерский центр в Казани
+              </div>
+              <div class="card-new__btn">
+                <span>Подробнее</span>
+                <i class="icon-next"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-pagination _lap-min"></div>
+  </div>
+</section>
+
+    <section class="sect-m s-reviews" id="s-reviews">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Реальные отзывы о нашем автосалоне</h2>
+    </div>
+  </div>
+</section>
+    <section class="sect-p s-order" id="s-order">
+  <picture class="sect-bg">
+    <img
+      src="img/order-bg.jpg"
+      alt="image"
+      style="object-position: center right"
+    />
+  </picture>
+  <div class="container">
+    <div class="s-order__wrap">
+      <div class="sect-head">
+        <h2 class="s-title">
+          Понравилась определенная модель? Оставьте заявку прямо сейчас!
+        </h2>
+        <div class="content-box sect-head__content">
+          <p>и консультацию от дилера!</p>
+        </div>
+      </div>
+      <div data-cars-options="Значение 1, Значение 2, Значение 3">
+        <form action="#" class="s-order__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input _white-opacity" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Телефон" class="input _white-opacity" />
+            </div>
+            <div class="form-control _full">
+              <div class="select" data-target-options="cars">
+                <div class="select-btn">
+                  <input
+                    type="text"
+                    placeholder="Укажите модель"
+                    readonly
+                    class="input select-input _white-opacity"
+                  />
+                  <i class="icon-bottom select-arrow"></i>
+                </div>
+                <div class="select-body"></div>
+              </div>
+            </div>
+            <div class="form-control _full">
+              <div class="check-wrap _white">
+                <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="acceptance-297"
+                          value="1"
+                          aria-invalid="false"
+                        />
+                        <span class="wpcf7-list-item-label">
+                          <span>
+                            Я соглашаюсь с
+                            <a href="/personal-data">
+                              Правилами обработки персональных данных
+                            </a>
+                            и
+                            <a href="/privacy-policy">
+                              Политикой конфиденциальности
+                            </a>
+                          </span>
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <button type="submit" class="btn-s _white">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-contacts" id="s-contacts">
+  <div class="container">
+    <div class="s-contacts__wrap">
+      <div class="s-contacts__info">
+        <div class="sect-head">
+          <h2 class="s-title">Контакты</h2>
+        </div>
+        <div class="s-contacts__items">
+          <div class="s-contacts__item">
+            <div class="item-rect">
+              <i class="icon-location"></i>
+            </div>
+            <span>г. Казань, ул. Ямашева, д. 1</span>
+          </div>
+          <div class="s-contacts__item">
+            <div class="item-rect">
+              <i class="icon-tel"></i>
+            </div>
+            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+          </div>
+          <div class="s-contacts__item">
+            <div class="item-rect">
+              <i class="icon-clock"></i>
+            </div>
+            <span>Ежедневно с 9:00 до 20:00</span>
+          </div>
+        </div>
+      </div>
+      <div
+        data-zoom="18"
+        data-center="[55.824966068916055,49.087845999999985]"
+        class="s-contacts__map map"
+      ></div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-faq" id="s-faq">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Часто задаваемые вопросы</h2>
+    </div>
+    <div data-spollers class="s-faq__wrap">
+      <div class="s-faq__col">
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Новый дилерский центр в Казани</span>
+            <i class="icon-bottom"></i>
+          </div>
+          <div>
+            <div class="s-faq__content content-box">
+              <p>
+                Мы, компания “Название” занимаемся продажей новых автомобилей
+                предоставляем услуги сервиса в России.
+              </p>
+              <p>
+                Нашими клиентами являются физические и юридические лица –
+                покупатели и продавцы автомобилей; производители и дистрибьюторы
+                автомобильных брендов.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Новый дилерский центр в Казани</span>
+            <i class="icon-bottom"></i>
+          </div>
+          <div>
+            <div class="s-faq__content content-box">
+              <p>
+                Мы, компания “Название” занимаемся продажей новых автомобилей
+                предоставляем услуги сервиса в России.
+              </p>
+              <p>
+                Нашими клиентами являются физические и юридические лица –
+                покупатели и продавцы автомобилей; производители и дистрибьюторы
+                автомобильных брендов.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Новый дилерский центр в Казани</span>
+            <i class="icon-bottom"></i>
+          </div>
+          <div>
+            <div class="s-faq__content content-box">
+              <p>
+                Мы, компания “Название” занимаемся продажей новых автомобилей
+                предоставляем услуги сервиса в России.
+              </p>
+              <p>
+                Нашими клиентами являются физические и юридические лица –
+                покупатели и продавцы автомобилей; производители и дистрибьюторы
+                автомобильных брендов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-faq__col">
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Новый дилерский центр в Казани</span>
+            <i class="icon-bottom"></i>
+          </div>
+          <div>
+            <div class="s-faq__content content-box">
+              <p>
+                Мы, компания “Название” занимаемся продажей новых автомобилей
+                предоставляем услуги сервиса в России.
+              </p>
+              <p>
+                Нашими клиентами являются физические и юридические лица –
+                покупатели и продавцы автомобилей; производители и дистрибьюторы
+                автомобильных брендов.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Новый дилерский центр в Казани</span>
+            <i class="icon-bottom"></i>
+          </div>
+          <div>
+            <div class="s-faq__content content-box">
+              <p>
+                Мы, компания “Название” занимаемся продажей новых автомобилей
+                предоставляем услуги сервиса в России.
+              </p>
+              <p>
+                Нашими клиентами являются физические и юридические лица –
+                покупатели и продавцы автомобилей; производители и дистрибьюторы
+                автомобильных брендов.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Новый дилерский центр в Казани</span>
+            <i class="icon-bottom"></i>
+          </div>
+          <div>
+            <div class="s-faq__content content-box">
+              <p>
+                Мы, компания “Название” занимаемся продажей новых автомобилей
+                предоставляем услуги сервиса в России.
+              </p>
+              <p>
+                Нашими клиентами являются физические и юридические лица –
+                покупатели и продавцы автомобилей; производители и дистрибьюторы
+                автомобильных брендов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__logos">
+        <a href="/" class="footer__logo">
+          <img src="img/logo-white.svg" alt="logo" />
+        </a>
+        <img
+          src="img/logo-all-white.svg"
+          alt="logo"
+          class="footer__logo-all"
+        />
+      </div>
+      <ul class="list footer__list">
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Трейд-ин</a></li>
+        <li><a href="#">Кредит</a></li>
+        <li><a href="#">Тест-драйв</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer__contacts">
+        <a href="tel:+79999999999" class="footer__tel">+7 (999) 999-99-99</a>
+        <div class="footer__address">г. Казань, Ямашева д. 1</div>
+        <div class="footer__work-time">Ежедневно с 9:00 до 20:00</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-content">
+        <div class="item-text">
+          Все права защищены. Копирование материалов строго по согласию
+          администрации сайта.
+        </div>
+        <div class="item-text">© ООО "Название", ИНН: 0000000000</div>
+      </div>
+      <ul class="list footer__bottom-list">
+        <li><a href="/privacy-policy">Политика конфиденциальности</a></li>
+        <li>
+          <a href="/personal-data">Политика обработки персональных данных</a>
+        </li>
+        <li>
+          <a href="/promotional-newsletter">
+            Получение информационно-рекламной рассылки
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="./files/swiper/swiper.min.js"></script>
+<script src="./files/fancybox/fancybox.min.js"></script>
+<script src="./files/inputmask/inputmask.min.js"></script>
+
+  
+  <script src="./js/app.js?ver=mw7qg129"></script>
+</body>
+</html>

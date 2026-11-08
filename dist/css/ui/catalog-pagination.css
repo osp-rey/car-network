@@ -1,0 +1,58 @@
+.catalog-pagination ul.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-pagination .prev,
+.catalog-pagination .next {
+  display: none !important;
+}
+
+.catalog-pagination span,
+.catalog-pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  user-select: none;
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  border-radius: 8px;
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.catalog-pagination span.current,
+.catalog-pagination a.current {
+  pointer-events: none;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+@media (max-width: 1025px) {
+  .catalog-pagination ul.page-numbers {
+    gap: 15px;
+  }
+}
+
+@media (any-hover: hover) {
+  .catalog-pagination a:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+  }
+}
+
+@media (hover: none) {
+  .catalog-pagination a:active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+  }
+}

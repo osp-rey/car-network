@@ -31,6 +31,10 @@
   @include tablet {
     font-size: 28px;
   }
+
+  span {
+    color: var(--primary);
+  }
 }
 
 .t-title {

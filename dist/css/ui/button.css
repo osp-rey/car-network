@@ -1,0 +1,107 @@
+.btn-s {
+  --border: var(--primary);
+  --background: var(--primary);
+  --color: white;
+  --border-h: var(--primary-h);
+  --background-h: var(--primary-h);
+  --color-h: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  padding: 18px 15px;
+  border-radius: 8px;
+  width: fit-content;
+  gap: 15px;
+  user-select: none;
+  color: var(--color);
+  font-size: 16px;
+  line-height: 100%;
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-s._outline-white {
+  --border: white;
+  --background: rgba(20, 20, 20, 0.2);
+  --color: white;
+  --border-h: white;
+  --background-h: white;
+  --color-h: var(--black);
+}
+
+.btn-s._white {
+  --border: white;
+  --background: white;
+  --color: var(--black);
+  --border-h: var(--porcelain);
+  --background-h: var(--porcelain);
+  --color-h: var(--black);
+}
+
+.simple-btn {
+  position: relative;
+  padding: 0px 20px 10px 10px;
+  user-select: none;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.simple-btn._active::before {
+  right: 0;
+}
+
+.simple-btn::before,
+.simple-btn::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 1px;
+}
+
+.simple-btn::after {
+  right: 0;
+  background-color: rgba(20, 20, 20, 0.2);
+}
+
+.simple-btn::before {
+  right: 100%;
+  background-color: var(--primary);
+  z-index: 1;
+  transition: right 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .btn-s {
+    font-size: 15px;
+    padding: 16px 12px;
+    gap: 12px;
+  }
+}
+
+@media (any-hover: hover) {
+  .btn-s:hover {
+    color: var(--color-h);
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+  }
+
+  .simple-btn:hover::before {
+    right: 0;
+  }
+}
+
+@media (hover: none) {
+  .btn-s:active {
+    color: var(--color-h);
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+  }
+
+  .simple-btn:active::before {
+    right: 0;
+  }
+}

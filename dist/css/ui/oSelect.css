@@ -1,0 +1,111 @@
+.o-select {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.o-select._open .o-select-btn i {
+  transform: rotate(180deg);
+}
+
+.o-select._open .o-select-body {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.o-select-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.o-select-btn .select-btn-text {
+  flex: 1;
+}
+
+.o-select-btn i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.o-select-body {
+  --background: white;
+  --color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background-color: var(--background);
+  color: var(--);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.o-select-body-inside {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.o-select-body-inside::-webkit-scrollbar {
+  width: 3px;
+}
+
+.o-select-body-inside::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.o-select-body-inside::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 20px;
+}
+
+.o-select-option {
+  --background-h: var(--mercury);
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  user-select: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.o-select-option._active {
+  pointer-events: none;
+  background-color: var(--mercury);
+}
+
+@media (max-width: 1025px) {
+  .o-select-option {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (any-hover: hover) {
+  .o-select-btn:hover {
+    color: var(--primary);
+  }
+
+  .o-select-option:hover {
+    background-color: var(--background-h);
+  }
+}
+
+@media (hover: none) {
+  .o-select-btn:active {
+    color: var(--primary);
+  }
+
+  .o-select-option:active {
+    background-color: var(--background-h);
+  }
+}

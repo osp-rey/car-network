@@ -1,0 +1,51 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-technology {
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    aspect-ratio: 1 / 0.41;
+    z-index: 1;
+    @include tablet {
+      aspect-ratio: inherit;
+      min-height: 400px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 50%;
+      bottom: 0;
+      background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+      opacity: 0.8;
+      z-index: -1;
+
+      @include laptop-min {
+        top: 0;
+        opacity: 1;
+      }
+    }
+  }
+  &__item-body {
+    padding: 30px;
+    @include tablet {
+      padding: 18px;
+    }
+  }
+  &__title {
+  }
+  &__content {
+    max-width: 825px;
+    margin-top: 30px;
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
+}

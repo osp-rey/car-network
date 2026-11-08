@@ -1,0 +1,136 @@
+.burger-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 110;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.burger-overlay._active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  width: 340px;
+  z-index: 120;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+}
+
+.burger._open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.burger__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.burger__logo {
+  display: block;
+  width: 100px;
+}
+
+.burger__logo img {
+  display: block;
+  width: 100%;
+}
+
+.burger__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  font-size: 18px;
+  border-radius: 50%;
+  color: white;
+}
+
+.burger__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.burger__list a {
+  transition: color 0.3s ease;
+}
+
+.burger__contacts-info {
+  margin-top: auto;
+  padding-top: 30px;
+}
+
+.burger__tel {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.burger__address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.burger__address i {
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.burger__btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (min-width: 1026px) {
+  .burger-overlay {
+    display: none;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@media (any-hover: hover) {
+  .burger__list a:hover {
+    color: var(--primary);
+  }
+
+  .burger__tel:hover {
+    color: var(--primary);
+  }
+}
+
+@media (hover: none) {
+  .burger__list a:active {
+    color: var(--primary);
+  }
+
+  .burger__tel:active {
+    color: var(--primary);
+  }
+}

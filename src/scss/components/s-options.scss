@@ -1,0 +1,56 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-options {
+  @include laptop-middle {
+    overflow: hidden;
+  }
+  &__slider {
+    @include laptop-middle {
+      overflow: visible !important;
+    }
+  }
+  &__slide {
+    display: flex !important;
+    flex-direction: column;
+    height: auto !important;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: white;
+
+    @include laptop-middle {
+      width: 520px !important;
+      max-width: 100%;
+    }
+    @include tablet {
+      width: 400px !important;
+    }
+  }
+  &__slide-img {
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/0.68;
+    object-fit: cover;
+  }
+  &__slide-body {
+    padding: 25px 20px;
+    @include tablet {
+      padding: 20px 15px;
+    }
+  }
+  &__slide-title {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__slide-content {
+    color: rgba(20, 20, 20, 0.6);
+    margin-top: 20px;
+  }
+}

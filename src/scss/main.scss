@@ -25,6 +25,7 @@
 @use "./ui/oSelect";
 @use "./ui/catalog-pagination";
 @use "./ui/w-pagination";
+@use "./ui/social";
 
 @use "./components/header";
 @use "./components/burger";
@@ -49,5 +50,10 @@
 @use "./components/s-archive-promo";
 @use "./components/s-spec";
 @use "./components/s-exterior";
+@use "./components/s-preview";
+@use "./components/s-options";
+@use "./components/s-technology";
+@use "./components/s-single";
+@use "./components/s-notfound";
 
 @use "./components/footer";

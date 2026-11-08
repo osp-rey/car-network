@@ -1,0 +1,72 @@
+.card-cat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  aspect-ratio: 1/1.25;
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  padding: 40px 30px;
+  z-index: 1;
+}
+
+.card-cat::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0) 39.35%, rgba(0, 0, 0, 0.6) 88%);
+  z-index: -1;
+}
+
+.card-cat .item-img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.card-cat .item-rect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 54px;
+  height: 54px;
+  background-color: white;
+  color: var(--black);
+  font-size: 16px;
+  margin: auto 0px 0px auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .card-cat {
+    padding: 25px 20px;
+  }
+
+  .card-cat .item-rect {
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+@media (any-hover: hover) {
+  .card-cat:hover .item-rect {
+    background-color: var(--primary);
+    color: white;
+  }
+}
+
+@media (hover: none) {
+  .card-cat:active .item-rect {
+    background-color: var(--primary);
+    color: white;
+  }
+}

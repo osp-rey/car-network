@@ -1,0 +1,92 @@
+.select {
+  position: relative;
+}
+
+.select._open .select-arrow {
+  transform: rotate(180deg);
+}
+
+.select._open .select-body {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.select-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select-input {
+  cursor: pointer;
+  padding-right: 45px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.select-arrow {
+  position: absolute;
+  font-size: 12px;
+  right: 20px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.select-body {
+  --border: rgba(20, 20, 20, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  border-radius: 8px;
+  background-color: white;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  z-index: 10;
+  max-height: 225px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: transform 0.4s ease, visibility 0.4s ease, opacity 0.4s ease;
+}
+
+.select-body::-webkit-scrollbar {
+  width: 2px;
+}
+
+.select-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.select-body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+.select-item {
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  padding: 12px 16px;
+  color: var(--black);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.select-item._active {
+  background-color: var(--porcelain);
+  pointer-events: none;
+}
+
+@media (any-hover: hover) {
+  .select-item:hover {
+    background-color: var(--porcelain);
+  }
+}
+
+@media (hover: none) {
+  .select-item:active {
+    background-color: var(--porcelain);
+  }
+}

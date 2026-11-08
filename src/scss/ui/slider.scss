@@ -76,7 +76,8 @@
 
   &._white {
     .swiper-pagination-bullet {
-      --background: white;
+      --background: rgba(255, 255, 255, 0.2);
+      --background-a: white;
     }
   }
 
@@ -91,23 +92,27 @@
   }
 
   .swiper-pagination-bullet {
-    --background: var(--primary);
+    --background: rgba(20, 20, 20, 0.2);
+    --background-a: var(--primary);
     margin: 0 !important;
-    opacity: 0.2;
+    opacity: 1 !important;
     border-radius: 2px;
-    width: 40px;
+    flex: 0 1 40px;
     height: 4px;
     cursor: pointer;
 
     background-color: var(--background);
 
-    transition: opacity 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      background-color 0.3s ease;
     &.swiper-pagination-bullet-active {
       opacity: 1;
+      background-color: var(--background-a);
     }
 
     @include hover {
-      opacity: 0.8;
+      background-color: var(--background-a);
     }
   }
 }

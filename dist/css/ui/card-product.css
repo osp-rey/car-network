@@ -1,0 +1,130 @@
+.card-product {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card-product__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/0.8;
+  object-fit: cover;
+}
+
+.card-product__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.card-product__title {
+  width: fit-content;
+  transition: color 0.3s ease;
+}
+
+.card-product__content {
+  margin: 5px 0px 0px 0px;
+}
+
+.card-product__bottom {
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.card-product__price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-product__price .item-price._fill {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--primary);
+}
+
+.card-product__rect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  border: 1px solid var(--black);
+  flex-shrink: 0;
+  font-size: 20px;
+  margin-left: auto;
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+@media (max-width: 1539px) {
+  .card-product__body {
+    padding: 20px;
+  }
+
+  .card-product__price .item-price {
+    font-size: 16px;
+  }
+
+  .card-product__rect {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .card-product__body {
+    padding: 15px;
+  }
+
+  .card-product__bottom {
+    padding-top: 20px;
+    gap: 15px;
+  }
+
+  .card-product__price .item-price {
+    font-size: 14px;
+  }
+
+  .card-product__price .item-price._fill {
+    padding: 8px;
+  }
+
+  .card-product__rect {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
+@media (any-hover: hover) {
+  .card-product:hover .card-product__rect {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .card-product__title:hover {
+    color: var(--primary);
+  }
+}
+
+@media (hover: none) {
+  .card-product:active .card-product__rect {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .card-product__title:active {
+    color: var(--primary);
+  }
+}

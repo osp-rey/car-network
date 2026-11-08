@@ -1,14 +1,15 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .breadcrumbs-sect {
-  margin: 30px 0px;
+  padding: 30px 0px;
+  background-color: var(--porcelain);
   @include laptop-min {
-    margin-bottom: 20px 0px;
+    padding: 20px 0px;
   }
 
   & + .sect-m {
-    margin-top: 0 !important;
+    margin-top: 30px !important;
   }
 }
 .breadcrumbs {
@@ -19,7 +20,7 @@
   font-size: 12px;
 
   a {
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
     @include hover {
       opacity: 0.7;
     }

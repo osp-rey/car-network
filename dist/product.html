@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" href="./files/favicon.ico" />
+<link rel="stylesheet" href="./files/icomoon/style.css" />
+<link rel="stylesheet" href="./files/swiper/swiper.min.css" />
+<link rel="stylesheet" href="./files/fancybox/fancybox.min.css" />
+<link rel="stylesheet" href="./css/main.css?ver=mw7qg129" />
+<title>AUTO</title>
+
+  </head>
+  <body class="body">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrap">
+      <div class="header__logos">
+        <a href="/" class="header__logo">
+          <img src="img/logo-dark.svg" alt="logo" class="logo-dark" />
+        </a>
+        <div class="header__logo-all">
+          <img src="img/logo-all-dark.svg" alt="logo" class="logo-dark">
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="list header__list">
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <div class="header__contacts-info">
+          <a href="tel:+79999999999" class="header__tel">+7 (999) 999-99-99</a>
+          <div class="header__address">
+            <i class="icon-location"></i>
+            <span>г. Казань, Ямашева д. 1</span>
+          </div>
+        </div>
+        <a
+          href="#modal-feedback"
+          data-fancybox
+          data-modal-title="Записаться на тест-драйв"
+          data-btn-note="Записаться на тест-драйв"
+          data-targt-note="#modal-feedback .input-note"
+          class="btn-s header__btn"
+        >
+          Записаться на тест-драйв
+        </a>
+      </div>
+      <div class="header__mob-buttons">
+        <a href="tel:+79999999999" target="_blank" class="header__mob-btn">
+          <i class="icon-tel"></i>
+        </a>
+        <div
+          target="_blank"
+          rel="nofollow"
+          class="header__mob-btn"
+          id="burger-open"
+        >
+          <i class="icon-burger"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+ 
+    <aside>
+  <div class="burger-overlay" id="burger-overlay" data-burger-close></div>
+  <div class="burger" id="burger">
+    <div class="burger__head">
+      <a href="/" class="burger__logo">
+        <img src="img/logo-dark.svg" alt="logo" />
+      </a>
+      <div class="burger__close" data-burger-close>
+        <i class="icon-close"></i>
+      </div>
+    </div>
+    <ul class="list burger__list">
+      <li><a href="#">Каталог</a></li>
+      <li><a href="#">Акции</a></li>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <div class="burger__contacts-info">
+      <a href="tel:+79999999999" class="burger__tel">+7 (999) 999-99-99</a>
+      <div class="burger__address">
+        <i class="icon-location"></i>
+        <span>г. Казань, Ямашева д. 1</span>
+      </div>
+    </div>
+    <a
+      href="#modal-feedback"
+      data-fancybox
+      data-btn-note="Записаться на тест-драйв"
+      data-targt-note="#modal-feedback .input-note"
+      class="btn-s burger__btn"
+    >
+      Записаться на тест-драйв
+    </a>
+  </div>
+</aside>
+
+    <aside>
+  <div class="modal" id="modal-feedback">
+    <div class="modal__body">
+      <div class="modal__head">
+        <div class="modal__title t-title" data-text="Связаться с нами">
+          Связаться с нами
+        </div>
+        <div class="content-box modal__content">
+          <p>Оставьте заявку и мы свяжемся с Вами в ближайшее время.</p>
+        </div>
+        <form action="#" class="modal__form">
+          <div class="form-grid">
+            <div style="display: none">
+              <input type="text" class="input-note" />
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Телефон" class="input" />
+            </div>
+            <div class="check-wrap">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-297"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я соглашаюсь с
+                          <a href="/personal-data">
+                            Правилами обработки персональных данных
+                          </a>
+                          и
+                          <a href="/privacy-policy">
+                            Политикой конфиденциальности
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+            <button type="submit" class="btn-s">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</aside>
+
+
+    <main>
+      <section class="s-hero _simple" id="s-hero">
+  <picture class="sect-bg">
+    <img src="img/hero-product.jpg" alt="background" />
+  </picture>
+  <div class="s-hero__inside">
+    <div class="container">
+      <div class="breadcrumbs">
+        <div class="aioseo-breadcrumbs">
+          <span class="aioseo-breadcrumb">
+            <a href="https://iida.qorix.ru" title="Главная">Главная</a>
+          </span>
+          <span class="aioseo-breadcrumb-separator">/</span>
+          <span class="aioseo-breadcrumb">
+            <a href="https://iida.qorix.ru" title="Каталог">Каталог</a>
+          </span>
+          <span class="aioseo-breadcrumb-separator">/</span>
+          <span class="aioseo-breadcrumb">TENET T4L</span>
+        </div>
+      </div>
+    </div>
+    <div class="s-hero__main">
+      <div class="container">
+        <div class="s-hero__wrap">
+          <h1 class="m-title s-hero__title">TENET T4L</h1>
+          <div class="content-box s-hero__content">
+            <p>
+              Кредит со ставкой от 0,01 % годовых.
+              <br />
+              Рассрочка 0 % без первого взноса
+            </p>
+          </div>
+          <div class="s-hero__price">
+            <div class="item-price">
+              <div class="item-name">Стоимость от</div>
+              <div class="item-val">1 990 000 руб.</div>
+            </div>
+            <div class="item-price">
+              <div class="item-name">Рассрочка от</div>
+              <div class="item-val-fill">19 900 руб/мес.</div>
+            </div>
+          </div>
+          <div class="s-hero__buttons">
+            <a
+              href="#modal-feedback"
+              data-fancybox
+              data-modal-title="Записаться на тест-драйв"
+              data-btn-note="Записаться на тест-драйв"
+              data-target-note="#modal-feedback .input-note"
+              class="btn-s _white"
+            >
+              Записаться на тест-драйв
+            </a>
+            <a href="#s-calc" class="btn-s _outline-white">Рассчитать платеж</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="s-spec bg-porcelain" id="s-spec">
+  <div class="container">
+    <div class="s-spec__wrap">
+      <div class="s-spec__item">
+        <div class="item-val">1.5T GDI</div>
+        <div class="item-name">Двигатель</div>
+      </div>
+      <div class="s-spec__item">
+        <div class="item-val">163 л.с.</div>
+        <div class="item-name">Мощность</div>
+      </div>
+      <div class="s-spec__item">
+        <div class="item-val">6AT AISIN</div>
+        <div class="item-name">Трансмиссия</div>
+      </div>
+      <div class="s-spec__item">
+        <div class="item-val">280 Нм</div>
+        <div class="item-name">Крутящий момент</div>
+      </div>
+      <div class="s-spec__item">
+        <div class="item-val">Передний / Полный</div>
+        <div class="item-name">Привод</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="sect-p bg-porcelain s-exterior" id="s-exterior">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Экстерьер</h2>
+    </div>
+    <div class="s-exterior__grid">
+      <article class="s-exterior__item">
+        <img src="img/exterior.jpg" alt="image" class="s-exterior__item-img" />
+        <div class="s-exterior__item-body">
+          <h3 class="s-exterior__item-title">Дизайн</h3>
+          <div class="content-box s-exterior__item-content">
+            <p>
+              Элегантный дизайн, современные технологии, высокий уровень
+              функциональности и больше возможностей для повседневных семейных
+              дел, загородных поездок и путешествий.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="s-exterior__item">
+        <img src="img/exterior.jpg" alt="image" class="s-exterior__item-img" />
+        <div class="s-exterior__item-body">
+          <h3 class="s-exterior__item-title">Комбинированные задние фонари</h3>
+          <div class="content-box s-exterior__item-content">
+            <p>
+              Банальные, но неопровержимые выводы, а также некоторые особенности
+              внутренней политики ограничены исключительно образом мышления.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="s-exterior__item">
+        <img src="img/exterior.jpg" alt="image" class="s-exterior__item-img" />
+        <div class="s-exterior__item-body">
+          <h3 class="s-exterior__item-title">Дизайн</h3>
+          <div class="content-box s-exterior__item-content">
+            <p>
+              Элегантный дизайн, современные технологии, высокий уровень
+              функциональности и больше возможностей для повседневных семейных
+              дел, загородных поездок и путешествий.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="s-exterior__item">
+        <img src="img/exterior.jpg" alt="image" class="s-exterior__item-img" />
+        <div class="s-exterior__item-body">
+          <h3 class="s-exterior__item-title">Комбинированные задние фонари</h3>
+          <div class="content-box s-exterior__item-content">
+            <p>
+              Банальные, но неопровержимые выводы, а также некоторые особенности
+              внутренней политики ограничены исключительно образом мышления.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+      <section class="sect-m s-preview">
+  <div class="container tabs">
+    <div class="s-preview__nav tabs-nav">
+      <div class="simple-btn _active" data-tab-btn="tab-1">Кузов</div>
+      <div class="simple-btn" data-tab-btn="tab-2">Салон</div>
+    </div>
+    <div class="tabs-content">
+      <div data-tab="tab-1" class="_active _show">
+        <div class="s-preview__wrap">
+          <div class="s-preview__info">
+            <h3 class="s-title s-preview__title">
+              Выберите цвет
+              <span>TENET T4L</span>
+            </h3>
+            <div class="content-box s-preview__content">
+              <p>Выразительный характер в каждой детали</p>
+            </div>
+          </div>
+          <div class="s-preview__gallery">
+            <div class="swiper s-preview__slider">
+              <div class="swiper-wrapper">
+                <a href="img/preview.png" data-fancybox class="swiper-slide">
+                  <img src="img/preview.png" alt="image" />
+                </a>
+                <a href="img/preview.png" data-fancybox class="swiper-slide">
+                  <img src="img/preview.png" alt="image" />
+                </a>
+                <a href="img/preview.png" data-fancybox class="swiper-slide">
+                  <img src="img/preview.png" alt="image" />
+                </a>
+                <a href="img/preview.png" data-fancybox class="swiper-slide">
+                  <img src="img/preview.png" alt="image" />
+                </a>
+              </div>
+            </div>
+            <div class="slider-pagination"></div>
+          </div>
+          <div class="s-preview__gallery-toggle">
+            <div
+              class="s-preview__gallery-toggle-btn _active"
+              data-gallery="img/preview.png,img/preview.png,img/preview.png,img/preview.png"
+            >
+              <div class="item-rect" style="background: #a80021"></div>
+              <span>Огненно-красный</span>
+            </div>
+            <div
+              class="s-preview__gallery-toggle-btn"
+              data-gallery="img/preview-2.png,img/preview-2.png,img/preview-2.png"
+            >
+              <div class="item-rect" style="background: #fff"></div>
+              <span>Искрящийся белый</span>
+            </div>
+            <div
+              class="s-preview__gallery-toggle-btn"
+              data-gallery="img/preview.png,img/preview.png,img/preview.png,img/preview.png"
+            >
+              <div class="item-rect" style="background: #a6a6a6"></div>
+              <span>Технологичный серый</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-tab="tab-2">
+        <div class="s-preview__wrap">
+          <div class="s-preview__info">
+            <h3 class="s-title s-preview__title">
+              Выберите цвет
+              <span>TENET T4L</span>
+            </h3>
+            <div class="content-box s-preview__content">
+              <p>Выразительный характер в каждой детали</p>
+            </div>
+          </div>
+          <div class="s-preview__gallery">
+            <div class="swiper s-preview__slider">
+              <div class="swiper-wrapper">
+                <a href="img/preview.png" data-fancybox class="swiper-slide">
+                  <img src="img/preview.png" alt="image" />
+                </a>
+                <a href="img/preview.png" data-fancybox class="swiper-slide">
+                  <img src="img/preview.png" alt="image" />
+                </a>
+                <a href="img/preview.png" data-fancybox class="swiper-slide">
+                  <img src="img/preview.png" alt="image" />
+                </a>
+                <a href="img/preview.png" data-fancybox class="swiper-slide">
+                  <img src="img/preview.png" alt="image" />
+                </a>
+              </div>
+            </div>
+            <div class="slider-pagination"></div>
+          </div>
+          <div class="s-preview__gallery-toggle">
+            <div
+              class="s-preview__gallery-toggle-btn _active"
+              data-gallery="img/preview.png,img/preview.png,img/preview.png,img/preview.png"
+            >
+              <div class="item-rect" style="background: #a80021"></div>
+              <span>Огненно-красный</span>
+            </div>
+            <div
+              class="s-preview__gallery-toggle-btn"
+              data-gallery="img/preview-2.png,img/preview-2.png,img/preview-2.png"
+            >
+              <div class="item-rect" style="background: #fff"></div>
+              <span>Искрящийся белый</span>
+            </div>
+            <div
+              class="s-preview__gallery-toggle-btn"
+              data-gallery="img/preview.png,img/preview.png,img/preview.png,img/preview.png"
+            >
+              <div class="item-rect" style="background: #a6a6a6"></div>
+              <span>Технологичный серый</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="sect-p bg-porcelain s-options" id="s-options">
+  <div class="container tabs">
+    <div class="sect-head">
+      <div class="sect-head__row">
+        <h2 class="s-title">Экстерьер</h2>
+        <div class="sect-head__nav tabs-nav">
+          <div class="simple-btn _active" data-tab-btn="tab-1">Тёплые опции</div>
+          <div class="simple-btn" data-tab-btn="tab-2">Мультимедия</div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs-content">
+      <div data-tab="tab-1" class="_active _show">
+        <div class="swiper s-options__slider">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide s-options__slide">
+              <img
+                src="img/options-img.jpg"
+                alt="image"
+                class="s-options__slide-img"
+              />
+              <div class="s-options__slide-body">
+                <h3 class="s-options__slide-title">Комфорт за рулем</h3>
+                <div class="content-box s-options__slide-content">
+                  <p>
+                    Высокий салон, удобная посадка и продуманная эргономика
+                    делают TENET T4L комфортным как для городских маршрутов, так
+                    и для дальних поездок за город.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="swiper-slide s-options__slide">
+              <img
+                src="img/options-img.jpg"
+                alt="image"
+                class="s-options__slide-img"
+              />
+              <div class="s-options__slide-body">
+                <h3 class="s-options__slide-title">
+                  Технологии всегда под рукой
+                </h3>
+                <div class="content-box s-options__slide-content">
+                  <p>
+                    Сдвоенный экран 2×10,25” с чёткой графикой и быстрым
+                    откликом делает управление функциями автомобиля интуитивным
+                    и удобным.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="swiper-slide s-options__slide">
+              <img
+                src="img/options-img.jpg"
+                alt="image"
+                class="s-options__slide-img"
+              />
+              <div class="s-options__slide-body">
+                <h3 class="s-options__slide-title">Комфорт за рулем</h3>
+                <div class="content-box s-options__slide-content">
+                  <p>
+                    Высокий салон, удобная посадка и продуманная эргономика
+                    делают TENET T4L комфортным как для городских маршрутов, так
+                    и для дальних поездок за город.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="slider-pagination"></div>
+      </div>
+      <div data-tab="tab-2">
+        <div class="swiper s-options__slider">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide s-options__slide">
+              <img
+                src="img/options-img.jpg"
+                alt="image"
+                class="s-options__slide-img"
+              />
+              <div class="s-options__slide-body">
+                <h3 class="s-options__slide-title">Комфорт за рулем</h3>
+                <div class="content-box s-options__slide-content">
+                  <p>
+                    Высокий салон, удобная посадка и продуманная эргономика
+                    делают TENET T4L комфортным как для городских маршрутов, так
+                    и для дальних поездок за город.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="swiper-slide s-options__slide">
+              <img
+                src="img/options-img.jpg"
+                alt="image"
+                class="s-options__slide-img"
+              />
+              <div class="s-options__slide-body">
+                <h3 class="s-options__slide-title">
+                  Технологии всегда под рукой
+                </h3>
+                <div class="content-box s-options__slide-content">
+                  <p>
+                    Сдвоенный экран 2×10,25” с чёткой графикой и быстрым
+                    откликом делает управление функциями автомобиля интуитивным
+                    и удобным.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="swiper-slide s-options__slide">
+              <img
+                src="img/options-img.jpg"
+                alt="image"
+                class="s-options__slide-img"
+              />
+              <div class="s-options__slide-body">
+                <h3 class="s-options__slide-title">Комфорт за рулем</h3>
+                <div class="content-box s-options__slide-content">
+                  <p>
+                    Высокий салон, удобная посадка и продуманная эргономика
+                    делают TENET T4L комфортным как для городских маршрутов, так
+                    и для дальних поездок за город.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="slider-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="sect-m s-technology" id="s-technology">
+  <div class="container tabs">
+    <div class="sect-head">
+      <div class="sect-head__row">
+        <h2 class="s-title">Технологии</h2>
+        <div class="sect-head__nav tabs-nav">
+          <div class="simple-btn _active" data-tab-btn="tab-1">Двигатель</div>
+          <div class="simple-btn" data-tab-btn="tab-2">Трансмиссия</div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs-content">
+      <div data-tab="tab-1" class="_active _show">
+        <article class="s-technology__item">
+          <picture class="sect-bg">
+            <img src="img/technology.jpg" alt="image" />
+          </picture>
+          <div class="s-technology__item-body">
+            <h3 class="t-title s-technology__title">Двигатель</h3>
+            <div class="content-box s-technology__content">
+              <p>
+                Двигатель 1,6 литра устанавливается на современные автомобили
+                Tenet. предлагая отличную производительность и экономичность
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div data-tab="tab-2">
+        <article class="s-technology__item">
+          <picture class="sect-bg">
+            <img src="img/technology.jpg" alt="image" />
+          </picture>
+          <div class="s-technology__item-body">
+            <h3 class="t-title s-technology__title">Двигатель</h3>
+            <div class="content-box s-technology__content">
+              <p>
+                Двигатель 1,6 литра устанавливается на современные автомобили
+                Tenet. предлагая отличную производительность и экономичность
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="s-calc" id="s-calc">
+  <div class="container">
+    <div class="s-calc__wrap">
+      <div class="s-calc__info">
+        <div class="sect-head">
+          <h2 class="s-title">Расчет стоимости кредита</h2>
+          <div class="content-box sect-head__content">
+            <p>
+              Специальные программы покупки в кредит.
+              <br />
+              Сниженные процентные ставки при поддержке производителя
+            </p>
+          </div>
+        </div>
+        <div data-cars-options="Значение 1, Значение 2, Значение 3">
+          <form action="#" class="s-calc__form">
+            <div class="form-grid">
+              <div class="form-control">
+                <input type="text" placeholder="Имя" class="input" />
+              </div>
+              <div class="form-control">
+                <input type="tel" placeholder="Телефон" class="input" />
+              </div>
+              <div class="form-control">
+                <input type="text" placeholder="Срок кредита" class="input" />
+              </div>
+              <div class="form-control">
+                <input
+                  type="text"
+                  placeholder="Первоначальный взнос"
+                  class="input"
+                />
+              </div>
+              <div class="form-control _full">
+                <div class="check-wrap">
+                  <span
+                    class="wpcf7-form-control-wrap"
+                    data-name="acceptance-297"
+                  >
+                    <span class="wpcf7-form-control wpcf7-acceptance">
+                      <span class="wpcf7-list-item">
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="acceptance-297"
+                            value="1"
+                            aria-invalid="false"
+                          />
+                          <span class="wpcf7-list-item-label">
+                            <span>
+                              Я соглашаюсь с
+                              <a href="/personal-data">
+                                Правилами обработки персональных данных
+                              </a>
+                              и
+                              <a href="/privacy-policy">
+                                Политикой конфиденциальности
+                              </a>
+                            </span>
+                          </span>
+                        </label>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <button type="submit" class="btn-s">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="s-calc__gallery">
+        <img src="img/calc.jpg" alt="image" class="s-calc__img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="sect-p s-order" id="s-order">
+  <picture class="sect-bg">
+    <img
+      src="img/order-bg.jpg"
+      alt="image"
+      style="object-position: center right"
+    />
+  </picture>
+  <div class="container">
+    <div class="s-order__wrap">
+      <div class="sect-head">
+        <h2 class="s-title">
+          Понравилась определенная модель? Оставьте заявку прямо сейчас!
+        </h2>
+        <div class="content-box sect-head__content">
+          <p>и консультацию от дилера!</p>
+        </div>
+      </div>
+      <div data-cars-options="Значение 1, Значение 2, Значение 3">
+        <form action="#" class="s-order__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input _white-opacity" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Телефон" class="input _white-opacity" />
+            </div>
+            <div class="form-control _full">
+              <div class="select" data-target-options="cars">
+                <div class="select-btn">
+                  <input
+                    type="text"
+                    placeholder="Укажите модель"
+                    readonly
+                    class="input select-input _white-opacity"
+                  />
+                  <i class="icon-bottom select-arrow"></i>
+                </div>
+                <div class="select-body"></div>
+              </div>
+            </div>
+            <div class="form-control _full">
+              <div class="check-wrap _white">
+                <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="acceptance-297"
+                          value="1"
+                          aria-invalid="false"
+                        />
+                        <span class="wpcf7-list-item-label">
+                          <span>
+                            Я соглашаюсь с
+                            <a href="/personal-data">
+                              Правилами обработки персональных данных
+                            </a>
+                            и
+                            <a href="/privacy-policy">
+                              Политикой конфиденциальности
+                            </a>
+                          </span>
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <button type="submit" class="btn-s _white">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__logos">
+        <a href="/" class="footer__logo">
+          <img src="img/logo-white.svg" alt="logo" />
+        </a>
+        <img
+          src="img/logo-all-white.svg"
+          alt="logo"
+          class="footer__logo-all"
+        />
+      </div>
+      <ul class="list footer__list">
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Трейд-ин</a></li>
+        <li><a href="#">Кредит</a></li>
+        <li><a href="#">Тест-драйв</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer__contacts">
+        <a href="tel:+79999999999" class="footer__tel">+7 (999) 999-99-99</a>
+        <div class="footer__address">г. Казань, Ямашева д. 1</div>
+        <div class="footer__work-time">Ежедневно с 9:00 до 20:00</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-content">
+        <div class="item-text">
+          Все права защищены. Копирование материалов строго по согласию
+          администрации сайта.
+        </div>
+        <div class="item-text">© ООО "Название", ИНН: 0000000000</div>
+      </div>
+      <ul class="list footer__bottom-list">
+        <li><a href="/privacy-policy">Политика конфиденциальности</a></li>
+        <li>
+          <a href="/personal-data">Политика обработки персональных данных</a>
+        </li>
+        <li>
+          <a href="/promotional-newsletter">
+            Получение информационно-рекламной рассылки
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="./files/swiper/swiper.min.js"></script>
+<script src="./files/fancybox/fancybox.min.js"></script>
+<script src="./files/inputmask/inputmask.min.js"></script>
+
+
+    <script src="./js/app.js?ver=mw7qg129"></script>
+  </body>
+</html>

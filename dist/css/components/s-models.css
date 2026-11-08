@@ -1,0 +1,29 @@
+.s-models__slider .swiper-slide {
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.s-models__slider .swiper-slide .card-product-p {
+  height: 100%;
+}
+
+@media (max-width: 1199px) {
+  .s-models {
+    overflow: hidden;
+  }
+
+  .s-models__slider {
+    overflow: visible !important;
+  }
+
+  .s-models__slider .swiper-slide {
+    width: 380px !important;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .s-models__slider .swiper-slide {
+    width: 320px !important;
+  }
+}

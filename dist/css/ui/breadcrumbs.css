@@ -1,0 +1,38 @@
+.breadcrumbs-sect {
+  padding: 30px 0px;
+  background-color: var(--porcelain);
+}
+
+.breadcrumbs-sect + .sect-m {
+  margin-top: 30px !important;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.breadcrumbs a {
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1025px) {
+  .breadcrumbs-sect {
+    padding: 20px 0px;
+  }
+}
+
+@media (any-hover: hover) {
+  .breadcrumbs a:hover {
+    opacity: 0.7;
+  }
+}
+
+@media (hover: none) {
+  .breadcrumbs a:active {
+    opacity: 0.7;
+  }
+}

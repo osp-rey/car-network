@@ -1,0 +1,65 @@
+.m-title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+  margin: 0;
+}
+
+.s-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  margin: 0;
+}
+
+.s-title span {
+  color: var(--primary);
+}
+
+.t-title {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0;
+}
+
+@media (max-width: 1365px) {
+  .m-title {
+    font-size: 42px;
+  }
+
+  .s-title {
+    font-size: 36px;
+  }
+
+  .t-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .m-title {
+    font-size: 36px;
+  }
+
+  .s-title {
+    font-size: 32px;
+  }
+
+  .t-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .m-title {
+    font-size: 32px;
+  }
+
+  .s-title {
+    font-size: 28px;
+  }
+
+  .t-title {
+    font-size: 24px;
+  }
+}

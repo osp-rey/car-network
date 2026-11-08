@@ -1,0 +1,110 @@
+.s-exterior__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.s-exterior__item {
+  position: relative;
+  z-index: 1;
+}
+
+.s-exterior__item-img {
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 1/0.7;
+  object-fit: cover;
+}
+
+.s-exterior__item-title {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 25px 0px 0px 0px;
+}
+
+.s-exterior__item-content {
+  color: rgba(20, 20, 20, 0.6);
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .s-exterior__item:first-child {
+    aspect-ratio: 1/0.41;
+    border-radius: 8px;
+    overflow: hidden;
+    grid-column: 3 span;
+    color: white;
+  }
+
+  .s-exterior__item:first-child .s-exterior__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    aspect-ratio: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    z-index: -2;
+  }
+
+  .s-exterior__item:first-child .s-exterior__item-body {
+    position: absolute;
+    padding: 30px 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .s-exterior__item:first-child .s-exterior__item-title {
+    font-size: 32px;
+  }
+
+  .s-exterior__item:first-child .s-exterior__item-content {
+    color: white;
+    max-width: 1090px;
+  }
+
+  .s-exterior__item:first-child::before {
+    position: absolute;
+    content: "";
+    inset: 50% 0px 0px 0px;
+    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1199px) {
+  .s-exterior__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    row-gap: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .s-exterior__item-title {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .s-exterior__item-content {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .s-exterior__grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .s-exterior__item:first-child {
+    grid-column: 2 span;
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    @@include("components/head.html")
+  </head>
+  <body class="body error404">
+    @@include("components/header.html") @@include("components/burger.html")
+    @@include("components/modals.html")
+
+    <main>
+      <section class="s-notfound sect-m">
+        <div class="container">
+          <div class="s-notfound__num">404</div>
+          <div class="s-notfound__descr content">
+            Страницы по Вашему запросу не существует.
+          </div>
+          <a href="/" class="btn-s s-notfound__btn"><span>На главную</span></a>
+        </div>
+      </section>
+    </main>
+
+    @@include("components/footer.html")
+
+    <script src="./js/app.js?ver=@@versions.js"></script>
+  </body>
+</html>

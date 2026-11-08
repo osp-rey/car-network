@@ -1,0 +1,86 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-single {
+  &__wrap {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+    row-gap: 30px;
+    @include laptop-min {
+      flex-direction: column-reverse;
+    }
+  }
+  &__main {
+    flex: 0 1 690px;
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__date {
+    color: rgba(20, 20, 20, 0.6);
+    margin-bottom: 20px;
+  }
+  &__title {
+    max-width: 590px;
+  }
+  &__content {
+    margin-top: 40px;
+    color: var(--outer);
+    @include laptop-middle {
+      margin-top: 30px;
+    }
+  }
+  &__btn {
+    margin-top: 40px;
+    @include laptop-middle {
+      margin-top: 30px;
+    }
+  }
+  &__gallery {
+    position: sticky;
+    flex: 0 1 800px;
+    @include laptop-min {
+      position: static;
+      flex: auto;
+      width: 800px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__gallery-img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+  &__share {
+    @include flex-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 30px;
+    row-gap: 20px;
+    @include laptop-middle {
+      margin-top: 30px;
+    }
+    @include laptop-min {
+      margin-top: 20px;
+      gap: 20px;
+      row-gap: 15px;
+    }
+  }
+  &__share-text {
+    font-size: 24px;
+    flex: 0 1 300px;
+    @include laptop-middle {
+      font-size: 20px;
+    }
+    @include laptop-min {
+      font-size: 18px;
+    }
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}

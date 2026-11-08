@@ -1,0 +1,28 @@
+.content-box {
+  line-height: 150%;
+}
+
+.content-box > * {
+  margin: 0;
+}
+
+.content-box > *:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.content-box a {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+@media (any-hover: hover) {
+  .content-box a:hover {
+    text-decoration: none;
+  }
+}
+
+@media (hover: none) {
+  .content-box a:active {
+    text-decoration: none;
+  }
+}

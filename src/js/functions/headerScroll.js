@@ -1,7 +1,7 @@
 export default function headerScroll() {
   const header = document.querySelector(".header");
 
-  if (header && window.matchMedia("(min-width: 1026px)").matches) {
+  if (header) {
     let lastScrollTop = 0;
 
     window.addEventListener("scroll", changeScroll);
@@ -16,10 +16,12 @@ export default function headerScroll() {
         header.classList.remove("_scroll");
       }
 
-      if (scrollTop > lastScrollTop && scrollTop > header.clientHeight) {
-        header.classList.add("_hide");
-      } else {
-        header.classList.remove("_hide");
+      if (window.matchMedia("(min-width: 1026px)").matches) {
+        if (scrollTop > lastScrollTop && scrollTop > header.clientHeight) {
+          header.classList.add("_hide");
+        } else {
+          header.classList.remove("_hide");
+        }
       }
 
       lastScrollTop = scrollTop;
